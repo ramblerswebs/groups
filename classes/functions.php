@@ -1,0 +1,113 @@
+<?php
+
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+/**
+ * Description of functions
+ *
+ * @author Chris
+ */
+class Functions {
+
+    public static function startsWith($haystack, $needle) {
+        // search backwards starting from haystack length characters from the end
+        return $needle === "" || strrpos($haystack, $needle, -strlen($haystack)) !== FALSE;
+    }
+
+    public static function endsWith($haystack, $needle) {
+        // search forward starting from end minus needle length characters
+        return $needle === "" || (($temp = strlen($haystack) - strlen($needle)) >= 0 && strpos($haystack, $needle, $temp) !== FALSE);
+    }
+
+    public static function formatDateDiff($interval) {
+
+        $doPlural = function($nb, $str) {
+            return $nb > 1 ? $str . 's' : $str;
+        }; // adds plurals
+
+        $format = array();
+        if ($interval->y !== 0) {
+            $format[] = "%y " . $doPlural($interval->y, "year");
+        }
+        if ($interval->m !== 0) {
+            $format[] = "%m " . $doPlural($interval->m, "month");
+        }
+        if ($interval->d !== 0) {
+            $format[] = "%d " . $doPlural($interval->d, "day");
+        }
+        if ($interval->h !== 0) {
+            $format[] = "%h " . $doPlural($interval->h, "hour");
+        }
+        if ($interval->i !== 0) {
+            $format[] = "%i " . $doPlural($interval->i, "minute");
+        }
+        if ($interval->s !== 0) {
+            if (!count($format)) {
+                return "less than a minute ago";
+            } else {
+                $format[] = "%s " . $doPlural($interval->s, "second");
+            }
+        }
+
+        // We use the two biggest parts
+        if (count($format) > 1) {
+            $format = array_shift($format) . " and " . array_shift($format);
+        } else {
+            $format = array_pop($format);
+        }
+
+        // Prepend 'since ' or whatever you like
+        return $interval->format($format);
+    }
+
+    public static function getExtension($path) {
+        $parts = explode(".", $path);
+        if (count($parts) == 1) {
+            return null;
+        }
+        return $parts[count($parts) - 1];
+    }
+
+    public static function deleteFolder($dir) {
+        if (file_exists($dir)) {
+            // delete folder and its contents
+            foreach (glob($dir . '/*') as $file) {
+                if (is_dir($file))
+                    Functions::deleteFolder($file);
+                else
+                    unlink($file);
+            } rmdir($dir);
+        }
+    }
+
+    public static function checkJsonFileProperties($json, $properties) {
+        $errors = 0;
+        foreach ($json as $item) {
+            $ok = self::checkJsonProperties($item, $properties);
+            $errors+=$ok;
+        }
+        return $errors;
+    }
+
+    public static function checkJsonProperties($item, $properties) {
+        foreach ($properties as $value) {
+            if (!self::checkJsonProperty($item, $value)) {
+                return 1;
+            }
+        }
+
+        return 0;
+    }
+
+    private static function checkJsonProperty($item, $property) {
+        if (property_exists($item, $property)) {
+            return true;
+        }
+        return false;
+    }
+
+}
