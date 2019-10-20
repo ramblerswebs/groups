@@ -76,12 +76,35 @@ class Functions {
         if (file_exists($dir)) {
             // delete folder and its contents
             foreach (glob($dir . '/*') as $file) {
-                if (is_dir($file))
+                if (is_dir($file)) {
                     Functions::deleteFolder($file);
-                else
+                } else {
                     unlink($file);
+                }
             } rmdir($dir);
         }
+    }
+
+    public static function errorEmail($feed, $error) {
+        require_once 'classes/phpmailer/src/PHPMailer.php';
+        require_once 'classes/phpmailer/src/SMTP.php';
+        require_once 'classes/phpmailer/src/Exception.php';
+        date_default_timezone_set('Europe/London');
+        $domain = "theramblers.org.uk";
+        // Create a new PHPMailer instance
+        $mailer = new PHPMailer\PHPMailer\PHPMailer;
+
+        $mailer->setFrom("admin@" . $domain, $domain);
+        $mailer->addAddress(NOTIFY, 'Web Master');
+        $mailer->isHTML(true);
+        $mailer->Subject = "Ramblers Feed Error";
+        $mailer->Body = "<p>Feed error found while running: " . TASK . "</p><p>"
+                . $error . "</p>";
+        $mailer->send();
+        echo "Error message sent" . BR;
+        echo "Task: " . TASK . BR;
+        echo "Feed: " . $feed . BR;
+        echo "Error: " . $error . BR;
     }
 
     public static function checkJsonFileProperties($json, $properties) {
@@ -108,6 +131,43 @@ class Functions {
             return true;
         }
         return false;
+    }
+
+    public static function getJsonFeed($feedurl, $properties) {
+        echo "Feed: " . $feedurl.BR;
+        $json = file_get_contents($feedurl);
+        if ($json === false) {
+            self::errorEmail($feedurl, "Unable to read feed: file_get_contents failed");
+            die();
+        } else {
+            if (!functions::startsWith("$json", "[{")) {
+                self::errorEmail($feedurl, "JSON code does not start with [{");
+                die();
+            }
+        }
+        echo "---- Feed read"  .BR;
+        $items = json_decode($json);
+        if (json_last_error() == JSON_ERROR_NONE) {
+
+            if (functions::checkJsonFileProperties($items, $properties) > 0) {
+                self::errorEmail($feedurl, "Expected properties not found in JSON feed");
+                die();
+            }
+        } else {
+            self::errorEmail($feedurl, "Error when decoding JSON feed");
+            die();
+        }
+        echo "---- JSON processed".BR;
+        return $items;
+    }
+
+    public static function findSite($sites, $code) {
+        foreach ($sites as $site) {
+            if ($site->code == $code) {
+                return $site;
+            }
+        }
+        return null;
     }
 
 }
