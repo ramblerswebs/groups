@@ -98,8 +98,9 @@ class Functions {
         $mailer->addAddress(NOTIFY, 'Web Master');
         $mailer->isHTML(true);
         $mailer->Subject = "Ramblers Feed Error";
-        $mailer->Body = "<p>Feed error found while running: " . TASK . "</p><p>"
-                . $error . "</p>";
+        $mailer->Body = "<p>Feed error found while running: " . TASK . "</p>".
+                "<p>Feed: ".$feed. "</p>"
+                . "<p>Error: ". $error . "</p>";
         $mailer->send();
         echo "Error message sent" . BR;
         echo "Task: " . TASK . BR;

@@ -28,8 +28,6 @@ class GroupsFile {
             $dist = GeometryGreatcircle::distance($latitude, $longitude, $lat, $lon, GeometryGreatcircle::KM);
             $group->distance = $dist;
         }
-
-
         usort($this->groups, "GroupsFile::cmpDistance");
         foreach ($this->groups as $key => $group) {
             if ($group->distance > $distance) {
@@ -45,8 +43,30 @@ class GroupsFile {
         }
         return $this->groups;
     }
-     private static function cmpDistance($a, $b) {
-        return $a->distance> $b->distance;
+
+    public function search($search, $number) {
+        $find = strtolower($search);
+        foreach ($this->groups as $key => $group) {
+            $found = false;
+            if (strpos(strtolower($group->name), $find) !== false) {
+                $found = true;
+            }
+            if (!$found) {
+                unset($this->groups[$key]);
+            }
+        }
+        $no = 0;
+        foreach ($this->groups as $key => $group) {
+            $no += 1;
+            if ($no > $number) {
+                unset($this->groups[$key]);
+            }
+        }
+        return $this->groups;
+    }
+
+    private static function cmpDistance($a, $b) {
+        return $a->distance > $b->distance;
     }
 
     public function allGroups() {

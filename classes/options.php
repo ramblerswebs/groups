@@ -6,13 +6,13 @@
  * @author Chris Vaughan
  */
 class Options {
-  
+
     private $gets = array();
     private $posts = array();
     private static $thisclass;
 
     function __construct() {
-        self::$thisclass=$this;
+        self::$thisclass = $this;
 
         foreach ($_GET as $key => $value) {
             $this->gets[$key] = htmlspecialchars($value);
@@ -21,27 +21,28 @@ class Options {
             $this->posts[$key] = htmlspecialchars($value);
         }
     }
-    public function getOptions(){
+
+    public function getOptions() {
         return self::$thisclass;
     }
 
     public function gets($name) {
-        if (isset($this->gets[$name])){
-             return $this->gets[$name];
+        if (isset($this->gets[$name])) {
+            return $this->gets[$name];
         } else {
             return null;
         }
-       
     }
 
     public function posts($name) {
-        if (isset($this->posts[$name])){
-             return $this->posts[$name];
+        if (isset($this->posts[$name])) {
+            return $this->posts[$name];
         } else {
             return null;
         }
     }
-    public function noGets(){
+
+    public function noGets() {
         return count($this->gets);
     }
 

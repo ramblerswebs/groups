@@ -1,5 +1,7 @@
 <?php
 
+// https://groups.theramblers.org.uk/?latitude=51.4589653&longitude=-2.52582669&maxpoints=100&dist=30
+
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 ini_set('assert.warning', 1);
@@ -26,12 +28,28 @@ spl_autoload_register('autoload');
 $opts = new Options();
 $groups = new GroupsFile();
 If ($opts->noGets() === 0) {
+    // return all groups
     $allGroups = $groups->allGroups();
     header("Access-Control-Allow-Origin: *");
     header("Content-type: application/json");
     echo json_encode($allGroups);
 }
+$search = $opts->gets("search");
+if ($search != null) {
+    // do a name search
+    $number = $opts->gets("number");
+    if ($number==null){
+        $number=20;
+    }
+    $groups = $groups->search($search, $number);
+    header("Access-Control-Allow-Origin: *");
+    header("Content-type: application/json");
+    echo json_encode($groups);
 
+    return;
+}
+
+// do a location search
 $latitude = $opts->gets("latitude");
 $longitude = $opts->gets("longitude");
 $distance = $opts->gets("dist");
