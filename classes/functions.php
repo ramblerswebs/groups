@@ -25,7 +25,7 @@ class Functions {
 
     public static function formatDateDiff($interval) {
 
-        $doPlural = function($nb, $str) {
+        $doPlural = function ($nb, $str) {
             return $nb > 1 ? $str . 's' : $str;
         }; // adds plurals
 
@@ -81,14 +81,15 @@ class Functions {
                 } else {
                     unlink($file);
                 }
-            } rmdir($dir);
+            }
+            rmdir($dir);
         }
     }
 
     public static function errorEmail($feed, $error) {
-        require_once 'classes/phpmailer/src/PHPMailer.php';
-        require_once 'classes/phpmailer/src/SMTP.php';
-        require_once 'classes/phpmailer/src/Exception.php';
+//        require_once 'classes/phpmailer/src/PHPMailer.php';
+//        require_once 'classes/phpmailer/src/SMTP.php';
+//        require_once 'classes/phpmailer/src/Exception.php';
         date_default_timezone_set('Europe/London');
         $domain = "theramblers.org.uk";
         // Create a new PHPMailer instance
@@ -98,9 +99,9 @@ class Functions {
         $mailer->addAddress(NOTIFY, 'Web Master');
         $mailer->isHTML(true);
         $mailer->Subject = "Ramblers Feed Error";
-        $mailer->Body = "<p>Feed error found while running: " . TASK . "</p>".
-                "<p>Feed: ".$feed. "</p>"
-                . "<p>Error: ". $error . "</p>";
+        $mailer->Body = "<p>Feed error found while running: " . TASK . "</p>" .
+                "<p>Feed: " . $feed . "</p>"
+                . "<p>Error: " . $error . "</p>";
         $mailer->send();
         echo "Error message sent" . BR;
         echo "Task: " . TASK . BR;
@@ -108,67 +109,110 @@ class Functions {
         echo "Error: " . $error . BR;
     }
 
-    public static function checkJsonFileProperties($json, $properties) {
-        $errors = 0;
-        foreach ($json as $item) {
-            $ok = self::checkJsonProperties($item, $properties);
-            $errors+=$ok;
-        }
-        return $errors;
-    }
-
-    public static function checkJsonProperties($item, $properties) {
-        foreach ($properties as $value) {
-            if (!self::checkJsonProperty($item, $value)) {
-                return 1;
-            }
-        }
-
-        return 0;
-    }
-
-    private static function checkJsonProperty($item, $property) {
-        if (property_exists($item, $property)) {
-            return true;
-        }
-        return false;
-    }
+//    public static function checkJsonFileProperties($json, $properties) {
+//        $errors = 0;
+//        foreach ($json as $item) {
+//            $ok = self::checkJsonProperties($item, $properties);
+//            $errors += $ok;
+//        }
+//        return $errors;
+//    }
+//
+//    public static function checkJsonProperties($item, $properties) {
+//        foreach ($properties as $value) {
+//            if (!self::checkJsonProperty($item, $value)) {
+//                return 1;
+//            }
+//        }
+//
+//        return 0;
+//    }
+//
+//    private static function checkJsonProperty($item, $property) {
+//        if (property_exists($item, $property)) {
+//            return true;
+//        }
+//        return false;
+//    }
 
     public static function getJsonFeed($feedurl, $properties) {
-        echo "Feed: " . $feedurl.BR;
+        echo "Feed: " . $feedurl . BR;
         $json = file_get_contents($feedurl);
         if ($json === false) {
             self::errorEmail($feedurl, "Unable to read feed: file_get_contents failed");
             die();
         } else {
-            if (!functions::startsWith("$json", "[{")) {
-                self::errorEmail($feedurl, "JSON code does not start with [{");
-                die();
-            }
+//            if (!functions::startsWith("$json", "[{")) {
+//                self::errorEmail($feedurl, "JSON code does not start with [{");
+//                die();
+//            }
         }
-        echo "---- Feed read"  .BR;
+        echo "---- Feed read" . BR;
         $items = json_decode($json);
         if (json_last_error() == JSON_ERROR_NONE) {
 
-            if (functions::checkJsonFileProperties($items, $properties) > 0) {
-                self::errorEmail($feedurl, "Expected properties not found in JSON feed");
-                die();
-            }
+     //       if (functions::checkJsonFileProperties($items, $properties) > 0) {
+     //           self::errorEmail($feedurl, "Expected properties not found in JSON feed");
+     //           die();
+     //       }
         } else {
             self::errorEmail($feedurl, "Error when decoding JSON feed");
             die();
         }
-        echo "---- JSON processed".BR;
+        echo "---- JSON processed" . BR;
         return $items;
     }
 
-    public static function findSite($sites, $code) {
-        foreach ($sites as $site) {
+    public static function findSite($response, $code) {
+        if ($response->success){
+            $sites=$response->data;
+                foreach ($sites as $site) {
             if ($site->code == $code) {
                 return $site;
             }
         }
+        }
+    
         return null;
+    }
+
+    public static function addTableHeader($cols) {
+        if (is_array($cols)) {
+            $out = "<tr>";
+            foreach ($cols as $value) {
+                $out .= "<th>" . $value . "</th>";
+            }
+            $out .= "</tr>" . PHP_EOL;
+            return $out;
+        } else {
+            return "<tr><td>invalid argument in html::addTableHeader</td></tr>";
+        }
+    }
+
+    public static function addTableRow($cols, $class = "") {
+        if (is_array($cols)) {
+            if ($class == "") {
+                $out = "<tr>";
+            } else {
+                $out = "<tr class='" . $class . "'>";
+            }
+
+            foreach ($cols as $value) {
+                $out .= "<td>" . $value . "</td>";
+            }
+            $out .= "</tr>" . PHP_EOL;
+            return $out;
+        } else {
+            return "<tr><td>invalid argument in html::addTableRows</td></tr>";
+        }
+    }
+
+    public static function addListItem($text) {
+        return "<li>" . $text . "</li>";
+    }
+
+    public static function contains($needle, $haystack) {
+        return strpos($haystack, $needle) !== false;
     }
 
 }

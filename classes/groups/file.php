@@ -66,7 +66,14 @@ class GroupsFile {
     }
 
     private static function cmpDistance($a, $b) {
-        return $a->distance > $b->distance;
+        $dist = $a->distance - $b->distance;
+        if ($dist == 0) {
+            return 0;
+        }
+        if ($dist > 0) {
+            return 1;
+        }
+        return -1;
     }
 
     public function allGroups() {

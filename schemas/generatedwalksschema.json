@@ -1,0 +1,1126 @@
+{
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "default": {},
+    "title": "Root Schema",
+    "required": [
+        "summary",
+        "data"
+    ],
+    "properties": {
+        "summary": {
+            "type": "object",
+            "default": {},
+            "title": "The summary Schema",
+            "required": [
+                "count",
+                "offset",
+                "limit",
+                "total"
+            ],
+            "properties": {
+                "count": {
+                    "type": "integer",
+                    "default": 0,
+                    "title": "The count Schema",
+                    "examples": [
+                        2
+                    ]
+                },
+                "offset": {
+                    "type": "integer",
+                    "default": 0,
+                    "title": "The offset Schema",
+                    "examples": [
+                        0
+                    ]
+                },
+                "limit": {
+                    "type": "integer",
+                    "default": 0,
+                    "title": "The limit Schema",
+                    "examples": [
+                        1000
+                    ]
+                },
+                "total": {
+                    "type": "integer",
+                    "default": 0,
+                    "title": "The total Schema",
+                    "examples": [
+                        2
+                    ]
+                }
+            },
+            "examples": [{
+                "count": 2,
+                "offset": 0,
+                "limit": 1000,
+                "total": 2
+            }]
+        },
+        "data": {
+            "type": "array",
+            "default": [],
+            "title": "The data Schema",
+            "items": {
+                "type": "object",
+                "title": "A Schema",
+                "required": [
+                    "item_type",
+                    "id",
+                    "title",
+                    "group_code",
+                    "area_code",
+                    "group_name",
+                    "description",
+                    "start_date_time",
+                    "end_date_time",
+                    "meeting_date_time",
+                    "start_location",
+                    "end_location",
+                    "meeting_location",
+                    "distance_km",
+                    "distance_miles",
+                    "ascent_metres",
+                    "ascent_feet",
+                    "difficulty",
+                    "shape",
+                    "duration",
+                    "walk_leader",
+                    "url",
+                    "status",
+                    "cancellation_reason",
+                    "accessibility",
+                    "facilities",
+                    "transport",
+                    "media",
+                    "linked_event",
+                    "groups_invited",
+                    "date_created",
+                    "date_updated"
+                ],
+                "properties": {
+                    "item_type": {
+                        "type": "string",
+                        "title": "The item_type Schema",
+                        "examples": [
+                            "group-walk"
+                        ]
+                    },
+                    "id": {
+                        "type": "string",
+                        "title": "The id Schema",
+                        "examples": [
+                            "100035756",
+                            "100035815"
+                        ]
+                    },
+                    "title": {
+                        "type": "string",
+                        "title": "The title Schema",
+                        "examples": [
+                            "test walk",
+                            "Walk leader 1 walk"
+                        ]
+                    },
+                    "group_code": {
+                        "type": "string",
+                        "title": "The group_code Schema",
+                        "examples": [
+                            "SW01"
+                        ]
+                    },
+                    "area_code": {
+                        "type": "string",
+                        "title": "The area_code Schema",
+                        "examples": [
+                            "SW"
+                        ]
+                    },
+                    "group_name": {
+                        "type": "string",
+                        "title": "The group_name Schema",
+                        "examples": [
+                            "Cardiff Group"
+                        ]
+                    },
+                    "description": {
+                        "type": "string",
+                        "title": "The description Schema",
+                        "examples": [
+                            "asd",
+                            "test"
+                        ]
+                    },
+                    "start_date_time": {
+                        "type": "string",
+                        "title": "The start_date_time Schema",
+                        "examples": [
+                            "2022-06-15T15:17:00",
+                            "2022-06-21T10:54:00"
+                        ]
+                    },
+                    "end_date_time": {
+                        "type": "string",
+                        "title": "The end_date_time Schema",
+                        "examples": [
+                            "2022-06-15T15:49:00",
+                            "2022-06-21T22:00:00"
+                        ]
+                    },
+                    "meeting_date_time": {
+                        "type": [
+                            "string",
+                            "null"
+                        ],
+                        "title": "The meeting_date_time Schema",
+                        "examples": [
+                            "2022-06-15T10:01:00",
+                            null
+                        ]
+                    },
+                    "start_location": {
+                        "type": "object",
+                        "title": "The start_location Schema",
+                        "required": [
+                            "latitude",
+                            "longitude",
+                            "grid_reference_6",
+                            "grid_reference_8",
+                            "postcode",
+                            "description",
+                            "date_time",
+                            "additional_details",
+                            "w3w"
+                        ],
+                        "properties": {
+                            "latitude": {
+                                "type": "number",
+                                "title": "The latitude Schema",
+                                "examples": [
+                                    51.355251,
+                                    50.993714
+                                ]
+                            },
+                            "longitude": {
+                                "type": "number",
+                                "title": "The longitude Schema",
+                                "examples": [
+                                    -2.933104,
+                                    -0.115897
+                                ]
+                            },
+                            "grid_reference_6": {
+                                "type": "string",
+                                "title": "The grid_reference_6 Schema",
+                                "examples": [
+                                    "ST350623",
+                                    "TQ322233"
+                                ]
+                            },
+                            "grid_reference_8": {
+                                "type": "string",
+                                "title": "The grid_reference_8 Schema",
+                                "examples": [
+                                    "ST35036227",
+                                    "TQ32212334"
+                                ]
+                            },
+                            "postcode": {
+                                "type": "string",
+                                "title": "The postcode Schema",
+                                "examples": [
+                                    "BS22 6AA",
+                                    "RH16 4US"
+                                ]
+                            },
+                            "description": {
+                                "type": "string",
+                                "title": "The description Schema",
+                                "examples": [
+                                    ""
+                                ]
+                            },
+                            "date_time": {
+                                "type": "string",
+                                "title": "The date_time Schema",
+                                "examples": [
+                                    ""
+                                ]
+                            },
+                            "additional_details": {
+                                "type": "string",
+                                "title": "The additional_details Schema",
+                                "examples": [
+                                    ""
+                                ]
+                            },
+                            "w3w": {
+                                "type": "string",
+                                "title": "The w3w Schema",
+                                "examples": [
+                                    "hint.locked.member",
+                                    "spite.gently.lively"
+                                ]
+                            }
+                        },
+                        "examples": [{
+                            "latitude": 51.355251,
+                            "longitude":
+                                -2.933104,
+                            "grid_reference_6": "ST350623",
+                            "grid_reference_8": "ST35036227",
+                            "postcode": "BS22 6AA",
+                            "description": "",
+                            "date_time": "",
+                            "additional_details": "",
+                            "w3w": "hint.locked.member"
+                        },
+                        {
+                            "latitude": 50.993714,
+                            "longitude":
+                                -0.115897,
+                            "grid_reference_6": "TQ322233",
+                            "grid_reference_8": "TQ32212334",
+                            "postcode": "RH16 4US",
+                            "description": "",
+                            "date_time": "",
+                            "additional_details": "",
+                            "w3w": "spite.gently.lively"
+                        }]
+                    },
+                    "end_location": {
+                        "type": [
+                            "object",
+                            "null"
+                        ],
+                        "title": "The end_location Schema",
+                        "required": [
+                            "latitude",
+                            "longitude",
+                            "grid_reference_6",
+                            "grid_reference_8",
+                            "postcode",
+                            "description",
+                            "date_time",
+                            "additional_details",
+                            "w3w"
+                        ],
+                        "properties": {
+                            "latitude": {
+                                "type": "number",
+                                "default": 0.0,
+                                "title": "The latitude Schema",
+                                "examples": [
+                                    51.355251
+                                ]
+                            },
+                            "longitude": {
+                                "type": "number",
+                                "default": 0.0,
+                                "title": "The longitude Schema",
+                                "examples": [
+                                    -2.933104
+                                ]
+                            },
+                            "grid_reference_6": {
+                                "type": "string",
+                                "default": "",
+                                "title": "The grid_reference_6 Schema",
+                                "examples": [
+                                    "ST350623"
+                                ]
+                            },
+                            "grid_reference_8": {
+                                "type": "string",
+                                "default": "",
+                                "title": "The grid_reference_8 Schema",
+                                "examples": [
+                                    "ST35036227"
+                                ]
+                            },
+                            "postcode": {
+                                "type": "string",
+                                "default": "",
+                                "title": "The postcode Schema",
+                                "examples": [
+                                    "BS22 6AA"
+                                ]
+                            },
+                            "description": {
+                                "type": "string",
+                                "default": "",
+                                "title": "The description Schema",
+                                "examples": [
+                                    ""
+                                ]
+                            },
+                            "date_time": {
+                                "type": "string",
+                                "default": "",
+                                "title": "The date_time Schema",
+                                "examples": [
+                                    ""
+                                ]
+                            },
+                            "additional_details": {
+                                "type": "string",
+                                "default": "",
+                                "title": "The additional_details Schema",
+                                "examples": [
+                                    ""
+                                ]
+                            },
+                            "w3w": {
+                                "type": "string",
+                                "default": "",
+                                "title": "The w3w Schema",
+                                "examples": [
+                                    "hint.locked.member"
+                                ]
+                            }
+                        },
+                        "examples": [{
+                                "latitude": 51.355251,
+                                "longitude":
+                                    -2.933104,
+                                "grid_reference_6": "ST350623",
+                                "grid_reference_8": "ST35036227",
+                                "postcode": "BS22 6AA",
+                                "description": "",
+                                "date_time": "",
+                                "additional_details": "",
+                                "w3w": "hint.locked.member"
+                            },
+                            null
+                        ]
+                    },
+                    "meeting_location": {
+                        "type": [
+                            "object",
+                            "null"
+                        ],
+                        "title": "The meeting_location Schema",
+                        "required": [
+                            "latitude",
+                            "longitude",
+                            "grid_reference_6",
+                            "grid_reference_8",
+                            "postcode",
+                            "description",
+                            "date_time",
+                            "additional_details",
+                            "w3w"
+                        ],
+                        "properties": {
+                            "latitude": {
+                                "type": "number",
+                                "default": 0.0,
+                                "title": "The latitude Schema",
+                                "examples": [
+                                    51.359031
+                                ]
+                            },
+                            "longitude": {
+                                "type": "number",
+                                "default": 0.0,
+                                "title": "The longitude Schema",
+                                "examples": [
+                                    -2.923673
+                                ]
+                            },
+                            "grid_reference_6": {
+                                "type": "string",
+                                "default": "",
+                                "title": "The grid_reference_6 Schema",
+                                "examples": [
+                                    "ST357627"
+                                ]
+                            },
+                            "grid_reference_8": {
+                                "type": "string",
+                                "default": "",
+                                "title": "The grid_reference_8 Schema",
+                                "examples": [
+                                    "ST35696268"
+                                ]
+                            },
+                            "postcode": {
+                                "type": "string",
+                                "default": "",
+                                "title": "The postcode Schema",
+                                "examples": [
+                                    "BS22 6AF"
+                                ]
+                            },
+                            "description": {
+                                "type": "string",
+                                "default": "",
+                                "title": "The description Schema",
+                                "examples": [
+                                    ""
+                                ]
+                            },
+                            "date_time": {
+                                "type": "string",
+                                "default": "",
+                                "title": "The date_time Schema",
+                                "examples": [
+                                    ""
+                                ]
+                            },
+                            "additional_details": {
+                                "type": "string",
+                                "default": "",
+                                "title": "The additional_details Schema",
+                                "examples": [
+                                    ""
+                                ]
+                            },
+                            "w3w": {
+                                "type": "string",
+                                "default": "",
+                                "title": "The w3w Schema",
+                                "examples": [
+                                    "sample.myself.clash"
+                                ]
+                            }
+                        },
+                        "examples": [{
+                                "latitude": 51.359031,
+                                "longitude":
+                                    -2.923673,
+                                "grid_reference_6": "ST357627",
+                                "grid_reference_8": "ST35696268",
+                                "postcode": "BS22 6AF",
+                                "description": "",
+                                "date_time": "",
+                                "additional_details": "",
+                                "w3w": "sample.myself.clash"
+                            },
+                            null
+                        ]
+                    },
+                    "distance_km": {
+                        "type": [
+                            "number",
+                            "null"
+                        ],
+                        "title": "The distance_km Schema",
+                        "examples": [
+                            1.6,
+                            null
+                        ]
+                    },
+                    "distance_miles": {
+                        "type": [
+                            "integer",
+                            "null"
+                        ],
+                        "title": "The distance_miles Schema",
+                        "examples": [
+                            1,
+                            null
+                        ]
+                    },
+                    "ascent_metres": {
+                        "type": [
+                            "integer",
+                            "null"
+                        ],
+                        "title": "The ascent_metres Schema",
+                        "examples": [
+                            1,
+                            null
+                        ]
+                    },
+                    "ascent_feet": {
+                        "type": "null",
+                        "title": "The ascent_feet Schema",
+                        "examples": [
+                            null
+                        ]
+                    },
+                    "difficulty": {
+                        "type": "object",
+                        "title": "The difficulty Schema",
+                        "required": [
+                            "code",
+                            "description"
+                        ],
+                        "properties": {
+                            "code": {
+                                "type": "string",
+                                "title": "The code Schema",
+                                "examples": [
+                                    "easy-access",
+                                    "moderate"
+                                ]
+                            },
+                            "description": {
+                                "type": "string",
+                                "title": "The description Schema",
+                                "examples": [
+                                    "Easy Access",
+                                    "Moderate"
+                                ]
+                            }
+                        },
+                        "examples": [{
+                            "code": "easy-access",
+                            "description": "Easy Access"
+                        },
+                        {
+                            "code": "moderate",
+                            "description": "Moderate"
+                        }]
+                    },
+                    "shape": {
+                        "type": "string",
+                        "title": "The shape Schema",
+                        "examples": [
+                            "linear",
+                            "circular"
+                        ]
+                    },
+                    "duration": {
+                        "type": "null",
+                        "title": "The duration Schema",
+                        "examples": [
+                            null
+                        ]
+                    },
+                    "walk_leader": {
+                        "type": "object",
+                        "title": "The walk_leader Schema",
+                        "required": [
+                            "name",
+                            "telephone",
+                            "has_email",
+                            "email_form"
+                        ],
+                        "properties": {
+                            "name": {
+                                "type": "string",
+                                "title": "The name Schema",
+                                "examples": [
+                                    ""
+                                ]
+                            },
+                            "telephone": {
+                                "type": "string",
+                                "title": "The telephone Schema",
+                                "examples": [
+                                    "011111111"
+                                ]
+                            },
+                            "has_email": {
+                                "type": "boolean",
+                                "title": "The has_email Schema",
+                                "examples": [
+                                    true
+                                ]
+                            },
+                            "email_form": {
+                                "type": "string",
+                                "title": "The email_form Schema",
+                                "examples": [
+                                    "https://uat.ramblers.nomensa.xyz/go-walking/group-walks/test-walk-3#contact",
+                                    "https://uat.ramblers.nomensa.xyz/go-walking/group-walks/walk-leader-1-walk#contact"
+                                ]
+                            }
+                        },
+                        "examples": [{
+                            "name": "",
+                            "telephone": "011111111",
+                            "has_email": true,
+                            "email_form": "https://uat.ramblers.nomensa.xyz/go-walking/group-walks/test-walk-3#contact"
+                        },
+                        {
+                            "name": "",
+                            "telephone": "011111111",
+                            "has_email": true,
+                            "email_form": "https://uat.ramblers.nomensa.xyz/go-walking/group-walks/walk-leader-1-walk#contact"
+                        }]
+                    },
+                    "url": {
+                        "type": "string",
+                        "title": "The url Schema",
+                        "examples": [
+                            "https://uat.ramblers.nomensa.xyz/go-walking/group-walks/test-walk-3",
+                            "https://uat.ramblers.nomensa.xyz/go-walking/group-walks/walk-leader-1-walk"
+                        ]
+                    },
+                    "status": {
+                        "type": "null",
+                        "title": "The status Schema",
+                        "examples": [
+                            null
+                        ]
+                    },
+                    "cancellation_reason": {
+                        "type": "null",
+                        "title": "The cancellation_reason Schema",
+                        "examples": [
+                            null
+                        ]
+                    },
+                    "accessibility": {
+                        "type": "null",
+                        "title": "The accessibility Schema",
+                        "examples": [
+                            null
+                        ]
+                    },
+                    "facilities": {
+                        "type": "null",
+                        "title": "The facilities Schema",
+                        "examples": [
+                            null
+                        ]
+                    },
+                    "transport": {
+                        "type": "null",
+                        "title": "The transport Schema",
+                        "examples": [
+                            null
+                        ]
+                    },
+                    "media": {
+                        "type": "null",
+                        "title": "The media Schema",
+                        "examples": [
+                            null
+                        ]
+                    },
+                    "linked_event": {
+                        "type": "null",
+                        "title": "The linked_event Schema",
+                        "examples": [
+                            null
+                        ]
+                    },
+                    "groups_invited": {
+                        "type": "null",
+                        "title": "The groups_invited Schema",
+                        "examples": [
+                            null
+                        ]
+                    },
+                    "date_created": {
+                        "type": "string",
+                        "title": "The date_created Schema",
+                        "examples": [
+                            "2022-06-01T15:17:44",
+                            "2022-06-07T10:54:09"
+                        ]
+                    },
+                    "date_updated": {
+                        "type": "string",
+                        "title": "The date_updated Schema",
+                        "examples": [
+                            "2022-06-01T15:25:05",
+                            "2022-06-07T12:54:58"
+                        ]
+                    }
+                },
+                "examples": [{
+                    "item_type": "group-walk",
+                    "id": "100035756",
+                    "title": "test walk",
+                    "group_code": "SW01",
+                    "area_code": "SW",
+                    "group_name": "Cardiff Group",
+                    "description": "asd",
+                    "start_date_time": "2022-06-15T15:17:00",
+                    "end_date_time": "2022-06-15T15:49:00",
+                    "meeting_date_time": "2022-06-15T10:01:00",
+                    "start_location": {
+                        "latitude": 51.355251,
+                        "longitude":
+                            -2.933104,
+                        "grid_reference_6": "ST350623",
+                        "grid_reference_8": "ST35036227",
+                        "postcode": "BS22 6AA",
+                        "description": "",
+                        "date_time": "",
+                        "additional_details": "",
+                        "w3w": "hint.locked.member"
+                    },
+                    "end_location": {
+                        "latitude": 51.355251,
+                        "longitude":
+                            -2.933104,
+                        "grid_reference_6": "ST350623",
+                        "grid_reference_8": "ST35036227",
+                        "postcode": "BS22 6AA",
+                        "description": "",
+                        "date_time": "",
+                        "additional_details": "",
+                        "w3w": "hint.locked.member"
+                    },
+                    "meeting_location": {
+                        "latitude": 51.359031,
+                        "longitude":
+                            -2.923673,
+                        "grid_reference_6": "ST357627",
+                        "grid_reference_8": "ST35696268",
+                        "postcode": "BS22 6AF",
+                        "description": "",
+                        "date_time": "",
+                        "additional_details": "",
+                        "w3w": "sample.myself.clash"
+                    },
+                    "distance_km": 1.6,
+                    "distance_miles": 1,
+                    "ascent_metres": 1,
+                    "ascent_feet": null,
+                    "difficulty": {
+                        "code": "easy-access",
+                        "description": "Easy Access"
+                    },
+                    "shape": "linear",
+                    "duration": null,
+                    "walk_leader": {
+                        "name": "",
+                        "telephone": "011111111",
+                        "has_email": true,
+                        "email_form": "https://uat.ramblers.nomensa.xyz/go-walking/group-walks/test-walk-3#contact"
+                    },
+                    "url": "https://uat.ramblers.nomensa.xyz/go-walking/group-walks/test-walk-3",
+                    "status": null,
+                    "cancellation_reason": null,
+                    "accessibility": null,
+                    "facilities": null,
+                    "transport": null,
+                    "media": null,
+                    "linked_event": null,
+                    "groups_invited": null,
+                    "date_created": "2022-06-01T15:17:44",
+                    "date_updated": "2022-06-01T15:25:05"
+                },
+                {
+                    "item_type": "group-walk",
+                    "id": "100035815",
+                    "title": "Walk leader 1 walk",
+                    "group_code": "SW01",
+                    "area_code": "SW",
+                    "group_name": "Cardiff Group",
+                    "description": "test",
+                    "start_date_time": "2022-06-21T10:54:00",
+                    "end_date_time": "2022-06-21T22:00:00",
+                    "meeting_date_time": null,
+                    "start_location": {
+                        "latitude": 50.993714,
+                        "longitude":
+                            -0.115897,
+                        "grid_reference_6": "TQ322233",
+                        "grid_reference_8": "TQ32212334",
+                        "postcode": "RH16 4US",
+                        "description": "",
+                        "date_time": "",
+                        "additional_details": "",
+                        "w3w": "spite.gently.lively"
+                    },
+                    "end_location": null,
+                    "meeting_location": null,
+                    "distance_km": null,
+                    "distance_miles": null,
+                    "ascent_metres": null,
+                    "ascent_feet": null,
+                    "difficulty": {
+                        "code": "moderate",
+                        "description": "Moderate"
+                    },
+                    "shape": "circular",
+                    "duration": null,
+                    "walk_leader": {
+                        "name": "",
+                        "telephone": "011111111",
+                        "has_email": true,
+                        "email_form": "https://uat.ramblers.nomensa.xyz/go-walking/group-walks/walk-leader-1-walk#contact"
+                    },
+                    "url": "https://uat.ramblers.nomensa.xyz/go-walking/group-walks/walk-leader-1-walk",
+                    "status": null,
+                    "cancellation_reason": null,
+                    "accessibility": null,
+                    "facilities": null,
+                    "transport": null,
+                    "media": null,
+                    "linked_event": null,
+                    "groups_invited": null,
+                    "date_created": "2022-06-07T10:54:09",
+                    "date_updated": "2022-06-07T12:54:58"
+                }]
+            },
+            "examples": [
+                [{
+                    "item_type": "group-walk",
+                    "id": "100035756",
+                    "title": "test walk",
+                    "group_code": "SW01",
+                    "area_code": "SW",
+                    "group_name": "Cardiff Group",
+                    "description": "asd",
+                    "start_date_time": "2022-06-15T15:17:00",
+                    "end_date_time": "2022-06-15T15:49:00",
+                    "meeting_date_time": "2022-06-15T10:01:00",
+                    "start_location": {
+                        "latitude": 51.355251,
+                        "longitude":
+                            -2.933104,
+                        "grid_reference_6": "ST350623",
+                        "grid_reference_8": "ST35036227",
+                        "postcode": "BS22 6AA",
+                        "description": "",
+                        "date_time": "",
+                        "additional_details": "",
+                        "w3w": "hint.locked.member"
+                    },
+                    "end_location": {
+                        "latitude": 51.355251,
+                        "longitude":
+                            -2.933104,
+                        "grid_reference_6": "ST350623",
+                        "grid_reference_8": "ST35036227",
+                        "postcode": "BS22 6AA",
+                        "description": "",
+                        "date_time": "",
+                        "additional_details": "",
+                        "w3w": "hint.locked.member"
+                    },
+                    "meeting_location": {
+                        "latitude": 51.359031,
+                        "longitude":
+                            -2.923673,
+                        "grid_reference_6": "ST357627",
+                        "grid_reference_8": "ST35696268",
+                        "postcode": "BS22 6AF",
+                        "description": "",
+                        "date_time": "",
+                        "additional_details": "",
+                        "w3w": "sample.myself.clash"
+                    },
+                    "distance_km": 1.6,
+                    "distance_miles": 1,
+                    "ascent_metres": 1,
+                    "ascent_feet": null,
+                    "difficulty": {
+                        "code": "easy-access",
+                        "description": "Easy Access"
+                    },
+                    "shape": "linear",
+                    "duration": null,
+                    "walk_leader": {
+                        "name": "",
+                        "telephone": "011111111",
+                        "has_email": true,
+                        "email_form": "https://uat.ramblers.nomensa.xyz/go-walking/group-walks/test-walk-3#contact"
+                    },
+                    "url": "https://uat.ramblers.nomensa.xyz/go-walking/group-walks/test-walk-3",
+                    "status": null,
+                    "cancellation_reason": null,
+                    "accessibility": null,
+                    "facilities": null,
+                    "transport": null,
+                    "media": null,
+                    "linked_event": null,
+                    "groups_invited": null,
+                    "date_created": "2022-06-01T15:17:44",
+                    "date_updated": "2022-06-01T15:25:05"
+                },
+                {
+                    "item_type": "group-walk",
+                    "id": "100035815",
+                    "title": "Walk leader 1 walk",
+                    "group_code": "SW01",
+                    "area_code": "SW",
+                    "group_name": "Cardiff Group",
+                    "description": "test",
+                    "start_date_time": "2022-06-21T10:54:00",
+                    "end_date_time": "2022-06-21T22:00:00",
+                    "meeting_date_time": null,
+                    "start_location": {
+                        "latitude": 50.993714,
+                        "longitude":
+                            -0.115897,
+                        "grid_reference_6": "TQ322233",
+                        "grid_reference_8": "TQ32212334",
+                        "postcode": "RH16 4US",
+                        "description": "",
+                        "date_time": "",
+                        "additional_details": "",
+                        "w3w": "spite.gently.lively"
+                    },
+                    "end_location": null,
+                    "meeting_location": null,
+                    "distance_km": null,
+                    "distance_miles": null,
+                    "ascent_metres": null,
+                    "ascent_feet": null,
+                    "difficulty": {
+                        "code": "moderate",
+                        "description": "Moderate"
+                    },
+                    "shape": "circular",
+                    "duration": null,
+                    "walk_leader": {
+                        "name": "",
+                        "telephone": "011111111",
+                        "has_email": true,
+                        "email_form": "https://uat.ramblers.nomensa.xyz/go-walking/group-walks/walk-leader-1-walk#contact"
+                    },
+                    "url": "https://uat.ramblers.nomensa.xyz/go-walking/group-walks/walk-leader-1-walk",
+                    "status": null,
+                    "cancellation_reason": null,
+                    "accessibility": null,
+                    "facilities": null,
+                    "transport": null,
+                    "media": null,
+                    "linked_event": null,
+                    "groups_invited": null,
+                    "date_created": "2022-06-07T10:54:09",
+                    "date_updated": "2022-06-07T12:54:58"
+                }]
+            ]
+        }
+    },
+    "examples": [{
+        "summary": {
+            "count": 2,
+            "offset": 0,
+            "limit": 1000,
+            "total": 2
+        },
+        "data": [{
+            "item_type": "group-walk",
+            "id": "100035756",
+            "title": "test walk",
+            "group_code": "SW01",
+            "area_code": "SW",
+            "group_name": "Cardiff Group",
+            "description": "asd",
+            "start_date_time": "2022-06-15T15:17:00",
+            "end_date_time": "2022-06-15T15:49:00",
+            "meeting_date_time": "2022-06-15T10:01:00",
+            "start_location": {
+                "latitude": 51.355251,
+                "longitude":
+                    -2.933104,
+                "grid_reference_6": "ST350623",
+                "grid_reference_8": "ST35036227",
+                "postcode": "BS22 6AA",
+                "description": "",
+                "date_time": "",
+                "additional_details": "",
+                "w3w": "hint.locked.member"
+            },
+            "end_location": {
+                "latitude": 51.355251,
+                "longitude":
+                    -2.933104,
+                "grid_reference_6": "ST350623",
+                "grid_reference_8": "ST35036227",
+                "postcode": "BS22 6AA",
+                "description": "",
+                "date_time": "",
+                "additional_details": "",
+                "w3w": "hint.locked.member"
+            },
+            "meeting_location": {
+                "latitude": 51.359031,
+                "longitude":
+                    -2.923673,
+                "grid_reference_6": "ST357627",
+                "grid_reference_8": "ST35696268",
+                "postcode": "BS22 6AF",
+                "description": "",
+                "date_time": "",
+                "additional_details": "",
+                "w3w": "sample.myself.clash"
+            },
+            "distance_km": 1.6,
+            "distance_miles": 1,
+            "ascent_metres": 1,
+            "ascent_feet": null,
+            "difficulty": {
+                "code": "easy-access",
+                "description": "Easy Access"
+            },
+            "shape": "linear",
+            "duration": null,
+            "walk_leader": {
+                "name": "",
+                "telephone": "011111111",
+                "has_email": true,
+                "email_form": "https://uat.ramblers.nomensa.xyz/go-walking/group-walks/test-walk-3#contact"
+            },
+            "url": "https://uat.ramblers.nomensa.xyz/go-walking/group-walks/test-walk-3",
+            "status": null,
+            "cancellation_reason": null,
+            "accessibility": null,
+            "facilities": null,
+            "transport": null,
+            "media": null,
+            "linked_event": null,
+            "groups_invited": null,
+            "date_created": "2022-06-01T15:17:44",
+            "date_updated": "2022-06-01T15:25:05"
+        },
+        {
+            "item_type": "group-walk",
+            "id": "100035815",
+            "title": "Walk leader 1 walk",
+            "group_code": "SW01",
+            "area_code": "SW",
+            "group_name": "Cardiff Group",
+            "description": "test",
+            "start_date_time": "2022-06-21T10:54:00",
+            "end_date_time": "2022-06-21T22:00:00",
+            "meeting_date_time": null,
+            "start_location": {
+                "latitude": 50.993714,
+                "longitude":
+                    -0.115897,
+                "grid_reference_6": "TQ322233",
+                "grid_reference_8": "TQ32212334",
+                "postcode": "RH16 4US",
+                "description": "",
+                "date_time": "",
+                "additional_details": "",
+                "w3w": "spite.gently.lively"
+            },
+            "end_location": null,
+            "meeting_location": null,
+            "distance_km": null,
+            "distance_miles": null,
+            "ascent_metres": null,
+            "ascent_feet": null,
+            "difficulty": {
+                "code": "moderate",
+                "description": "Moderate"
+            },
+            "shape": "circular",
+            "duration": null,
+            "walk_leader": {
+                "name": "",
+                "telephone": "011111111",
+                "has_email": true,
+                "email_form": "https://uat.ramblers.nomensa.xyz/go-walking/group-walks/walk-leader-1-walk#contact"
+            },
+            "url": "https://uat.ramblers.nomensa.xyz/go-walking/group-walks/walk-leader-1-walk",
+            "status": null,
+            "cancellation_reason": null,
+            "accessibility": null,
+            "facilities": null,
+            "transport": null,
+            "media": null,
+            "linked_event": null,
+            "groups_invited": null,
+            "date_created": "2022-06-07T10:54:09",
+            "date_updated": "2022-06-07T12:54:58"
+        }]
+    }]
+}

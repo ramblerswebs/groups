@@ -1,0 +1,457 @@
+{
+    "summary": {
+        "count": 7,
+        "offset": 0,
+        "limit": 1000,
+        "total": 7
+    },
+    "data": [{
+            "item_type": "group-walk",
+            "id": "100035505",
+            "title": "A new walk ",
+            "group_code": "AV01",
+            "area_code": "AV",
+            "group_name": "Bristol Group",
+            "description": "This is a new walk. This is a new walk. This is a new walk. This is a new walk. This is a new walk. This is a new walk. This is a new walk. ",
+            "start_date_time": "2022-06-08T10:25:00",
+            "end_date_time": "2022-06-08T12:30:00",
+            "meeting_date_time": null,
+            "start_location": {
+                "latitude": 51.449,
+                "longitude": -2.58,
+                "grid_reference_6": "ST597724",
+                "grid_reference_8": "ST59707244",
+                "postcode": "BS1 6QF",
+                "description": "",
+                "date_time": "",
+                "additional_details": ""
+            },
+            "end_location": null,
+            "meeting_location": null,
+            "distance_km": null,
+            "distance_miles": null,
+            "ascent_metres": null,
+            "ascent_feet": null,
+            "difficulty": {
+                "code": "easy",
+                "description": "Easy"
+            },
+            "shape": "circular",
+            "duration": null,
+            "walk_leader": {
+                "name": "",
+                "telephone": "123",
+                "has_email": true,
+                "email_form": "https:\/\/uat.ramblers.nomensa.xyz\/go-walking\/group-walks\/new-walk#contact"
+            },
+            "url": "https:\/\/uat.ramblers.nomensa.xyz\/go-walking\/group-walks\/new-walk",
+            "status": null,
+            "cancellation_reason": null,
+            "accessibility": {
+                "code": "assistance-dogs",
+                "description": "Assistance dogs only"
+            },
+            "facilities": null,
+            "transport": {
+                "code": "car-sharing",
+                "description": "Car sharing available"
+            },
+            "media": [{
+                    "alt": "Clifton Suspension Bridge",
+                    "title": "",
+                    "credit": "",
+                    "caption": "",
+                    "styles": [{
+                            "style": "thumbnail",
+                            "url": "https:\/\/uat-static.ramblers.nomensa.xyz\/styles\/thumbnail\/s3\/2022-05\/Bristol_0.jpg?itok=-PTeeclX",
+                            "width": 100,
+                            "height": 100
+                        }, {
+                            "style": "small",
+                            "url": "https:\/\/uat-static.ramblers.nomensa.xyz\/styles\/small\/s3\/2022-05\/Bristol_0.jpg?itok=oebm1D0f",
+                            "width": 600,
+                            "height": null
+                        }, {
+                            "style": "medium",
+                            "url": "https:\/\/uat-static.ramblers.nomensa.xyz\/styles\/medium\/s3\/2022-05\/Bristol_0.jpg?itok=qm0kTnMq",
+                            "width": 1280,
+                            "height": null
+                        }, {
+                            "style": "large",
+                            "url": "https:\/\/uat-static.ramblers.nomensa.xyz\/styles\/large\/s3\/2022-05\/Bristol_0.jpg?itok=aCL9bxf1",
+                            "width": 1920,
+                            "height": null
+                        }, {
+                            "style": "xl",
+                            "url": "https:\/\/uat-static.ramblers.nomensa.xyz\/styles\/xl\/s3\/2022-05\/Bristol_0.jpg?itok=3IlbsMyi",
+                            "width": 2560,
+                            "height": null
+                        }]
+                }],
+            "linked_event": null,
+            "groups_invited": null,
+            "date_created": "2022-05-25T10:25:22",
+            "date_updated": "2022-05-25T10:29:14"
+        }, {
+            "item_type": "group-walk",
+            "id": "100035317",
+            "title": "MH TEST - 1176",
+            "group_code": "SW01",
+            "area_code": "SW",
+            "group_name": "Cardiff Group",
+            "description": "1176",
+            "start_date_time": "2022-06-08T12:25:24",
+            "end_date_time": "2022-06-08T13:25:00",
+            "start_location": {
+                "latitude": 51.355251,
+                "longitude": -2.933104,
+                "grid_reference_6": "ST350623",
+                "grid_reference_8": "ST35036227",
+                "postcode": "BS22 6AA",
+                "description": "",
+                "date_time": "",
+                "additional_details": ""
+            },
+            "end_location": null,
+            "meeting_location": null,
+            "distance_km": 3,
+            "distance_miles": 1.9,
+            "ascent_metres": 1,
+            "ascent_feet": null,
+            "difficulty": {
+                "code": "easy-access",
+                "description": "Easy Access"
+            },
+            "shape": "circular",
+            "duration": null,
+            "walk_leader": {
+                "name": "",
+                "telephone": "011111111",
+                "has_email": true,
+                "email_form": "https:\/\/uat.ramblers.nomensa.xyz\/go-walking\/group-walks\/mh-test-1176-2#contact"
+            },
+            "url": "https:\/\/uat.ramblers.nomensa.xyz\/go-walking\/group-walks\/mh-test-1176-2",
+            "status": null,
+            "cancellation_reason": null,
+            "accessibility": null,
+            "facilities": null,
+            "transport": null,
+            "media": null,
+            "linked_event": null,
+            "groups_invited": null,
+            "date_created": "2022-05-04T12:25:19",
+            "date_updated": "2022-05-04T12:34:43"
+        }, {
+            "item_type": "group-walk",
+            "id": "100035705",
+            "title": "Walks don\u0027t work test",
+            "group_code": "AV01",
+            "area_code": "AV",
+            "group_name": "Bristol Group",
+            "description": "Desc",
+            "start_date_time": "2022-06-13T16:27:00",
+            "end_date_time": "2022-06-13T17:47:00",
+            "meeting_date_time": "2022-06-13T11:00:00",
+            "start_location": {
+                "latitude": 51.487881,
+                "longitude": -2.537275,
+                "grid_reference_6": "ST627767",
+                "grid_reference_8": "ST62707674",
+                "postcode": "BS16 1HG",
+                "description": "",
+                "date_time": "",
+                "additional_details": ""
+            },
+            "end_location": null,
+            "meeting_location": {
+                "latitude": 51.487881,
+                "longitude": -2.537275,
+                "grid_reference_6": "ST627767",
+                "grid_reference_8": "ST62707674",
+                "postcode": "BS16 1HG",
+                "description": "",
+                "date_time": "",
+                "additional_details": ""
+            },
+            "distance_km": 220,
+            "distance_miles": 136.7,
+            "ascent_metres": 234234,
+            "ascent_feet": 71395,
+            "difficulty": {
+                "code": "easy",
+                "description": "Easy"
+            },
+            "shape": "circular",
+            "duration": null,
+            "walk_leader": {
+                "name": "",
+                "telephone": "123",
+                "has_email": true,
+                "email_form": "https:\/\/uat.ramblers.nomensa.xyz\/go-walking\/group-walks\/walks-dont-work-test#contact"
+            },
+            "url": "https:\/\/uat.ramblers.nomensa.xyz\/go-walking\/group-walks\/walks-dont-work-test",
+            "status": null,
+            "cancellation_reason": null,
+            "accessibility": {
+                "code": "fast-pace",
+                "description": "Fast pace"
+            },
+            "facilities": {
+                "code": "toilets",
+                "description": "Toilets available"
+            },
+            "transport": {
+                "code": "coach-trip",
+                "description": "Coach trip"
+            },
+            "media": null,
+            "linked_event": null,
+            "groups_invited": null,
+            "date_created": "2022-05-26T14:27:08",
+            "date_updated": "2022-05-26T16:23:02"
+        }, {
+            "item_type": "group-walk",
+            "id": "100035756",
+            "title": "test walk",
+            "group_code": "SW01",
+            "area_code": "SW",
+            "group_name": "Cardiff Group",
+            "description": "asd",
+            "start_date_time": "2022-06-15T15:17:00",
+            "end_date_time": "2022-06-15T15:49:00",
+            "meeting_date_time": "2022-06-15T10:01:00",
+            "start_location": {
+                "latitude": 51.355251,
+                "longitude": -2.933104,
+                "grid_reference_6": "ST350623",
+                "grid_reference_8": "ST35036227",
+                "postcode": "BS22 6AA",
+                "description": "",
+                "date_time": "",
+                "additional_details": "",
+                "w3w": "hint.locked.member"
+            },
+            "end_location": {
+                "latitude": 51.355251,
+                "longitude": -2.933104,
+                "grid_reference_6": "ST350623",
+                "grid_reference_8": "ST35036227",
+                "postcode": "BS22 6AA",
+                "description": "",
+                "date_time": "",
+                "additional_details": "",
+                "w3w": "hint.locked.member"
+            },
+            "meeting_location": {
+                "latitude": 51.359031,
+                "longitude": -2.923673,
+                "grid_reference_6": "ST357627",
+                "grid_reference_8": "ST35696268",
+                "postcode": "BS22 6AF",
+                "description": "",
+                "date_time": "",
+                "additional_details": "",
+                "w3w": "sample.myself.clash"
+            },
+            "distance_km": 1.6,
+            "distance_miles": 1,
+            "ascent_metres": 1,
+            "ascent_feet": null,
+            "difficulty": {
+                "code": "easy-access",
+                "description": "Easy Access"
+            },
+            "shape": "linear",
+            "duration": null,
+            "walk_leader": {
+                "name": "",
+                "telephone": "011111111",
+                "has_email": true,
+                "email_form": "https:\/\/uat.ramblers.nomensa.xyz\/go-walking\/group-walks\/test-walk-3#contact"
+            },
+            "url": "https:\/\/uat.ramblers.nomensa.xyz\/go-walking\/group-walks\/test-walk-3",
+            "status": null,
+            "cancellation_reason": null,
+            "accessibility": null,
+            "facilities": null,
+            "transport": null,
+            "media": null,
+            "linked_event": null,
+            "groups_invited": null,
+            "date_created": "2022-06-01T15:17:44",
+            "date_updated": "2022-06-01T15:25:05"
+        }, {
+            "item_type": "group-walk",
+            "id": "100035815",
+            "title": "Walk leader 1 walk",
+            "group_code": "SW01",
+            "area_code": "SW",
+            "group_name": "Cardiff Group",
+            "description": "test",
+            "start_date_time": "2022-06-21T10:54:00",
+            "end_date_time": "2022-06-21T22:00:00",
+            "meeting_date_time": null,
+            "start_location": {
+                "latitude": 50.993714,
+                "longitude": -0.115897,
+                "grid_reference_6": "TQ322233",
+                "grid_reference_8": "TQ32212334",
+                "postcode": "RH16 4US",
+                "description": "",
+                "date_time": "",
+                "additional_details": "",
+                "w3w": "spite.gently.lively"
+            },
+            "end_location": null,
+            "meeting_location": null,
+            "distance_km": null,
+            "distance_miles": null,
+            "ascent_metres": null,
+            "ascent_feet": null,
+            "difficulty": {
+                "code": "moderate",
+                "description": "Moderate"
+            },
+            "shape": "circular",
+            "duration": null,
+            "walk_leader": {
+                "name": "",
+                "telephone": "011111111",
+                "has_email": true,
+                "email_form": "https:\/\/uat.ramblers.nomensa.xyz\/go-walking\/group-walks\/walk-leader-1-walk#contact"
+            },
+            "url": "https:\/\/uat.ramblers.nomensa.xyz\/go-walking\/group-walks\/walk-leader-1-walk",
+            "status": null,
+            "cancellation_reason": null,
+            "accessibility": null,
+            "facilities": null,
+            "transport": null,
+            "media": null,
+            "linked_event": null,
+            "groups_invited": null,
+            "date_created": "2022-06-07T10:54:09",
+            "date_updated": "2022-06-07T12:54:58"
+        }, {
+            "item_type": "group-walk",
+            "id": "100035828",
+            "title": "Sample Walk",
+            "group_code": "WE05",
+            "area_code": "WE",
+            "group_name": "West Wiltshire Group",
+            "description": "Sample walk to test the entry",
+            "start_date_time": "2022-06-22T10:00:00",
+            "end_date_time": "2022-06-22T12:08:00",
+            "meeting_date_time": null,
+            "start_location": {
+                "latitude": 51.526905,
+                "longitude": -1.723824,
+                "grid_reference_6": "SU192810",
+                "grid_reference_8": "SU19168098",
+                "postcode": "SN4 0ET",
+                "description": "Junction with the M4",
+                "date_time": "",
+                "additional_details": "",
+                "w3w": "moss.rather.frog"
+            },
+            "end_location": null,
+            "meeting_location": null,
+            "distance_km": 6.4,
+            "distance_miles": 4,
+            "ascent_metres": null,
+            "ascent_feet": null,
+            "difficulty": {
+                "code": "leisurely",
+                "description": "Leisurely"
+            },
+            "shape": "circular",
+            "duration": null,
+            "walk_leader": {
+                "name": "",
+                "telephone": null,
+                "has_email": false,
+                "email_form": "https:\/\/uat.ramblers.nomensa.xyz\/go-walking\/group-walks\/sample-walk#contact"
+            },
+            "url": "https:\/\/uat.ramblers.nomensa.xyz\/go-walking\/group-walks\/sample-walk",
+            "status": null,
+            "cancellation_reason": null,
+            "accessibility": null,
+            "facilities": {
+                "code": "refreshments",
+                "description": "Refreshments available (Pub\/cafe)"
+            },
+            "transport": null,
+            "media": null,
+            "linked_event": null,
+            "groups_invited": null,
+            "date_created": "2022-06-08T18:26:10",
+            "date_updated": "2022-06-08T18:52:28"
+        }, {
+            "item_type": "group-walk",
+            "id": "100001291",
+            "title": "TEST - walk",
+            "group_code": "SW08",
+            "area_code": "SW",
+            "group_name": "Maesteg Group",
+            "description": "TEST - please do not join.",
+            "start_date_time": "2022-11-16T03:00:00",
+            "end_date_time": "2022-11-16T03:02:00",
+            "meeting_date_time": null,
+            "start_location": {
+                "latitude": 51.355251,
+                "longitude": -2.933104,
+                "grid_reference_6": "ST350623",
+                "grid_reference_8": "ST35036227",
+                "postcode": "BS22 6AA",
+                "description": "",
+                "date_time": "",
+                "additional_details": ""
+            },
+            "end_location": {
+                "latitude": 51.359031,
+                "longitude": -2.923673,
+                "grid_reference_6": "ST357627",
+                "grid_reference_8": "ST35696268",
+                "postcode": "BS22 6AF",
+                "description": "",
+                "date_time": "",
+                "additional_details": ""
+            },
+            "meeting_location": {
+                "latitude": 51.355251,
+                "longitude": -2.933104,
+                "grid_reference_6": "ST350623",
+                "grid_reference_8": "ST35036227",
+                "postcode": "BS22 6AA",
+                "description": "",
+                "date_time": "",
+                "additional_details": ""
+            },
+            "distance_km": 0.1,
+            "distance_miles": 0.1,
+            "ascent_metres": null,
+            "ascent_feet": null,
+            "difficulty": {
+                "code": "easy-access",
+                "description": "Easy Access"
+            },
+            "shape": "linear",
+            "duration": null,
+            "walk_leader": {
+                "name": "",
+                "telephone": null,
+                "has_email": false,
+                "email_form": "https:\/\/uat.ramblers.nomensa.xyz\/go-walking\/group-walks\/test-walk#contact"
+            },
+            "url": "https:\/\/uat.ramblers.nomensa.xyz\/go-walking\/group-walks\/test-walk",
+            "status": null,
+            "cancellation_reason": null,
+            "accessibility": null,
+            "facilities": null,
+            "transport": null,
+            "media": null,
+            "linked_event": null,
+            "groups_invited": null,
+            "date_created": "2022-02-02T17:07:48",
+            "date_updated": "2022-05-23T10:51:59"
+        }]
+}

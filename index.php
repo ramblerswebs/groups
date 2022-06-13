@@ -1,5 +1,9 @@
 <?php
 
+//
+// produces data in V1 format but from the old GWEM Feed
+//
+
 // https://groups.theramblers.org.uk/?latitude=51.4589653&longitude=-2.52582669&maxpoints=100&dist=30
 
 error_reporting(E_ALL);
@@ -18,8 +22,11 @@ if (version_compare(PHP_VERSION, '7.0.0') < 0) {
 }
 // set current directory to current run directory
 $exepath = dirname(__FILE__);
-define('BASE_PATH', dirname(realpath(dirname(__FILE__))));
+//echo $exepath;
+//define('BASE_PATH', dirname(realpath(dirname(__FILE__))));
+define('BASE_PATH', $exepath);
 chdir($exepath);
+//echo BASE_PATH;
 $key = NULL;
 
 require('classes/autoload.php');

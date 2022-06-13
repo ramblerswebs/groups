@@ -1,0 +1,258 @@
+{
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+    "$id": "http://example.com/example.json",
+    "type": "array",
+    "default": [],
+    "title": "Root Schema",
+    "items": {
+        "type": "object",
+        "title": "A Schema",
+        "required": [
+            "type",
+            "scope",
+            "group_code",
+            "area_code",
+            "groups_in_area",
+            "name",
+            "url",
+            "external_url",
+            "description",
+            "latitude",
+            "longitude",
+            "date_updated",
+            "date_walks_events_updated"
+        ],
+        "properties": {
+            "type": {
+                "type": "string",
+                "title": "The type Schema",
+                "examples": [
+                    "group-hub"
+                ]
+            },
+            "scope": {
+                "type": "string",
+                "title": "The scope Schema",
+                "examples": [
+                    "G",
+                    "A"
+                ]
+            },
+            "group_code": {
+                "type": "string",
+                "title": "The group_code Schema",
+                "examples": [
+                    "LD01",
+                    "SR",
+                    "LD03",
+                    "LD50"
+                ]
+            },
+            "area_code": {
+                "type": "string",
+                "title": "The area_code Schema",
+                "examples": [
+                    "LD",
+                    "SR"
+                ]
+            },
+            "groups_in_area": {
+                "type": "string",
+                "title": "The groups_in_area Schema",
+                "examples": [
+                    "",
+                    "SR01,SR02,SR03,SR04,SR05,SR06,SR07,SR08,SR10,SR11,SR12,SR13,SR14,SR15,SR50,SR51"
+                ]
+            },
+            "name": {
+                "type": "string",
+                "title": "The name Schema",
+                "examples": [
+                    "Furness Group",
+                    "Surrey Area",
+                    "Kendal Group",
+                    "Summit Good Group"
+                ]
+            },
+            "url": {
+                "type": "string",
+                "title": "The url Schema",
+                "examples": [
+                    "https://uat.ramblers.nomensa.xyz/go-walking/ramblers-groups/furness-group",
+                    "https://uat.ramblers.nomensa.xyz/go-walking/ramblers-groups/areas/surrey-area",
+                    "https://uat.ramblers.nomensa.xyz/go-walking/ramblers-groups/kendal-group",
+                    "https://uat.ramblers.nomensa.xyz/go-walking/ramblers-groups/summit-good-group"
+                ]
+            },
+            "external_url": {
+                "type": "string",
+                "title": "The external_url Schema",
+                "examples": [
+                    "https://www.furnessramblers.org.uk/",
+                    "https://www.surreyramblers.org.uk",
+                    "https://kendalramblers.weebly.com/",
+                    "https://www.summitgood.org.uk"
+                ]
+            },
+            "description": {
+                "type": "string",
+                "title": "The description Schema",
+                "examples": [
+                    "",
+                    "We are the Surrey Area. We open the way for everyone in our local community to enjoy the pleasures of walking."
+                ]
+            },
+            "latitude": {
+                "type": "null",
+                "title": "The latitude Schema",
+                "examples": [
+                    null
+                ]
+            },
+            "longitude": {
+                "type": "null",
+                "title": "The longitude Schema",
+                "examples": [
+                    null
+                ]
+            },
+            "date_updated": {
+                "type": "string",
+                "title": "The date_updated Schema",
+                "examples": [
+                    "2022-03-29T00:54:30",
+                    "2022-04-06T07:43:06"
+                ]
+            },
+            "date_walks_events_updated": {
+                "type": "string",
+                "title": "The date_walks_events_updated Schema",
+                "examples": [
+                    "1970-01-01T00:00:00"
+                ]
+            }
+        },
+        "examples": [{
+            "type": "group-hub",
+            "scope": "G",
+            "group_code": "LD01",
+            "area_code": "LD",
+            "groups_in_area": "",
+            "name": "Furness Group",
+            "url": "https://uat.ramblers.nomensa.xyz/go-walking/ramblers-groups/furness-group",
+            "external_url": "https://www.furnessramblers.org.uk/",
+            "description": "",
+            "latitude": null,
+            "longitude": null,
+            "date_updated": "2022-03-29T00:54:30",
+            "date_walks_events_updated": "1970-01-01T00:00:00"
+        },
+        {
+            "type": "group-hub",
+            "scope": "A",
+            "group_code": "SR",
+            "area_code": "SR",
+            "groups_in_area": "SR01,SR02,SR03,SR04,SR05,SR06,SR07,SR08,SR10,SR11,SR12,SR13,SR14,SR15,SR50,SR51",
+            "name": "Surrey Area",
+            "url": "https://uat.ramblers.nomensa.xyz/go-walking/ramblers-groups/areas/surrey-area",
+            "external_url": "https://www.surreyramblers.org.uk",
+            "description": "We are the Surrey Area. We open the way for everyone in our local community to enjoy the pleasures of walking.",
+            "latitude": null,
+            "longitude": null,
+            "date_updated": "2022-04-06T07:43:06",
+            "date_walks_events_updated": "1970-01-01T00:00:00"
+        },
+        {
+            "type": "group-hub",
+            "scope": "G",
+            "group_code": "LD03",
+            "area_code": "LD",
+            "groups_in_area": "",
+            "name": "Kendal Group",
+            "url": "https://uat.ramblers.nomensa.xyz/go-walking/ramblers-groups/kendal-group",
+            "external_url": "https://kendalramblers.weebly.com/",
+            "description": "",
+            "latitude": null,
+            "longitude": null,
+            "date_updated": "2022-03-29T00:54:30",
+            "date_walks_events_updated": "1970-01-01T00:00:00"
+        },
+        {
+            "type": "group-hub",
+            "scope": "G",
+            "group_code": "LD50",
+            "area_code": "LD",
+            "groups_in_area": "",
+            "name": "Summit Good Group",
+            "url": "https://uat.ramblers.nomensa.xyz/go-walking/ramblers-groups/summit-good-group",
+            "external_url": "https://www.summitgood.org.uk",
+            "description": "",
+            "latitude": null,
+            "longitude": null,
+            "date_updated": "2022-03-29T00:54:30",
+            "date_walks_events_updated": "1970-01-01T00:00:00"
+        }]
+    },
+    "examples": [
+        [{
+            "type": "group-hub",
+            "scope": "G",
+            "group_code": "LD01",
+            "area_code": "LD",
+            "groups_in_area": "",
+            "name": "Furness Group",
+            "url": "https://uat.ramblers.nomensa.xyz/go-walking/ramblers-groups/furness-group",
+            "external_url": "https://www.furnessramblers.org.uk/",
+            "description": "",
+            "latitude": null,
+            "longitude": null,
+            "date_updated": "2022-03-29T00:54:30",
+            "date_walks_events_updated": "1970-01-01T00:00:00"
+        },
+        {
+            "type": "group-hub",
+            "scope": "A",
+            "group_code": "SR",
+            "area_code": "SR",
+            "groups_in_area": "SR01,SR02,SR03,SR04,SR05,SR06,SR07,SR08,SR10,SR11,SR12,SR13,SR14,SR15,SR50,SR51",
+            "name": "Surrey Area",
+            "url": "https://uat.ramblers.nomensa.xyz/go-walking/ramblers-groups/areas/surrey-area",
+            "external_url": "https://www.surreyramblers.org.uk",
+            "description": "We are the Surrey Area. We open the way for everyone in our local community to enjoy the pleasures of walking.",
+            "latitude": null,
+            "longitude": null,
+            "date_updated": "2022-04-06T07:43:06",
+            "date_walks_events_updated": "1970-01-01T00:00:00"
+        },
+        {
+            "type": "group-hub",
+            "scope": "G",
+            "group_code": "LD03",
+            "area_code": "LD",
+            "groups_in_area": "",
+            "name": "Kendal Group",
+            "url": "https://uat.ramblers.nomensa.xyz/go-walking/ramblers-groups/kendal-group",
+            "external_url": "https://kendalramblers.weebly.com/",
+            "description": "",
+            "latitude": null,
+            "longitude": null,
+            "date_updated": "2022-03-29T00:54:30",
+            "date_walks_events_updated": "1970-01-01T00:00:00"
+        },
+        {
+            "type": "group-hub",
+            "scope": "G",
+            "group_code": "LD50",
+            "area_code": "LD",
+            "groups_in_area": "",
+            "name": "Summit Good Group",
+            "url": "https://uat.ramblers.nomensa.xyz/go-walking/ramblers-groups/summit-good-group",
+            "external_url": "https://www.summitgood.org.uk",
+            "description": "",
+            "latitude": null,
+            "longitude": null,
+            "date_updated": "2022-03-29T00:54:30",
+            "date_walks_events_updated": "1970-01-01T00:00:00"
+        }]
+    ]
+}

@@ -1,0 +1,78 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://ramblers-webs/groupsfeed.schema.json",
+    "title": "Group",
+    "description": "A Ramblers walking group",
+    "type": "object",
+    "properties": {
+        "type": {
+            "description": "The type of walking group",
+            "type": "string"
+        },
+        "scope": {
+            "description": "Group or area indicator",
+            "type": "string"
+        },
+        "group_code": {
+            "description": "Ramblers group code",
+            "type": "string"
+        },
+        "area_code": {
+            "description": "Ramblers area code",
+            "type": "string"
+        },
+        "groups_in_area": {
+            "description": "Comma-separated codes for groups in the area. Empty if the group is not an area.",
+            "type": "string"
+        },
+        "name": {
+            "description": "Name of the group",
+            "type": "string"
+        },
+        "url": {
+            "description": "URL of Group web page on national site",
+            "type": "string"
+        },
+        "external_url": {
+            "description": "URL of groups own web site",
+            "type": "string"
+        },
+        "description": {
+            "description": "Public description of the group",
+            "type": "string",
+            "contentMediaType": "text/html"
+        },
+        "latitude": {
+            "type": "number",
+            "minimum": -90,
+            "maximum": 90
+        },
+        "longitude": {
+            "type": "number",
+            "minimum": -180,
+            "maximum": 180
+        },
+        "date_updated": {
+            "description": "Date and time when the group details were last updated",
+            "type": "string",
+            "format": "date-time"
+        },
+        "date_walks_events_updated": {
+            "description": "Date and time of the last time any of the group's walks or events were last updated",
+            "type": "string",
+            "format": "date-time"
+        }
+    },
+    "required": ["type", 
+        "scope",
+        "group_code", 
+        "area_code", 
+        "name", 
+        "url",
+        "external_url",
+        "description",
+        "latitude", 
+        "longitude",
+        "date_updated",
+        "date_walks_events_updated"]
+}
