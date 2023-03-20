@@ -4,7 +4,8 @@
     "title": "Group",
     "description": "A Ramblers walking group",
     "type": "object",
-    "properties": {
+    "properties": [
+        {
         "type": {
             "description": "The type of walking group",
             "type": "string"
@@ -62,7 +63,7 @@
             "type": "string",
             "format": "date-time"
         }
-    },
+    }],
     "required": ["type", 
         "scope",
         "group_code", 
@@ -75,4 +76,4 @@
         "longitude",
         "date_updated",
         "date_walks_events_updated"]
-}
+    

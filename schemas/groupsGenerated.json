@@ -1,0 +1,163 @@
+{
+    "definitions": {
+
+    },
+    "$schema": "http://json-schema.org/draft-07/schema#", 
+    "$id": "https://example.com/object1655663395.json", 
+    "title": "Root", 
+    "type": "array",
+    "default": [],
+    "items": {
+        "$id": "#root/items", 
+        "title": "Items", 
+        "type": "object",
+        "required": [
+            "scope",
+            "group_code",
+            "area_code",
+            "groups_in_area",
+            "name",
+            "url",
+            "external_url",
+            "description",
+            "latitude",
+            "longitude",
+            "date_updated",
+            "date_walks_events_updated"
+        ],
+        "properties": {
+            "type": {
+                "$id": "#root/items/type", 
+                "title": "Type", 
+                "type": "string",
+                "default": "",
+                "examples": [
+                    "group-hub"
+                ],
+                "pattern": "^.*$"
+            },
+            "scope": {
+                "$id": "#root/items/scope", 
+                "title": "Scope", 
+                "type": "string",
+                "default": "",
+                "examples": [
+                    "A"
+                ],
+                "pattern": "^.*$"
+            },
+            "group_code": {
+                "$id": "#root/items/group_code", 
+                "title": "Group_code", 
+                "type": "string",
+                "default": "",
+                "examples": [
+                    "LD01"
+                ],
+                "pattern": "^.*$"
+            },
+            "area_code": {
+                "$id": "#root/items/area_code", 
+                "title": "Area_code", 
+                "type": "string",
+                "default": "",
+                "examples": [
+                    "LD"
+                ],
+                "pattern": "^.*$"
+            },
+            "groups_in_area": {
+                "$id": "#root/items/groups_in_area", 
+                "title": "Groups_in_area", 
+                "type": ["array", "null"],
+                "items": {
+                    "type": "string"
+                },
+                "default": "",
+                "examples": [
+                    "DE01,DE02,DE03,DE04"
+                ],
+                "nullable": true
+            },
+            "name": {
+                "$id": "#root/items/name", 
+                "title": "Name", 
+                "type": "string",
+                "default": "",
+                "examples": [
+                    "Furness Group"
+                ],
+                "pattern": "^.*$"
+            },
+            "url": {
+                "$id": "#root/items/url", 
+                "title": "Url", 
+                "type": "string",
+                "format": "uri",
+                "pattern": "^(https?|http?)://",
+                "default": "",
+                "examples": [
+                    "https://uat.ramblers.nomensa.xyz/go-walking/ramblers-groups/furness-group"
+                ]
+            },
+            "external_url": {
+                "$id": "#root/items/external_url", 
+                "title": "External_url", 
+                "type": ["string",
+                    "null"
+                ],
+                "format": "uri",
+                "pattern": "^(https?|http?)://",
+                "description": "External group website URL",
+                "example": "https://example.com",
+                "nullable": true
+            },
+            "description": {
+                "$id": "#root/items/description", 
+                "title": "Description", 
+                "type": "string",
+                "default": "",
+                "examples": [
+                    ""
+                ],
+                "pattern": "^.*$"
+            },
+            "latitude": {
+                "$id": "#root/items/latitude", 
+                "title": "Latitude", 
+                "maximum": 90,
+                "minimum": -90,
+                "type": "number",
+                "description": "Latitude (decimal)",
+                "format": "float",
+                "example": 52.123456
+            },
+            "longitude": {
+                "$id": "#root/items/longitude", 
+                "title": "Longitude", 
+                "maximum": 180,
+                "minimum": -180,
+                "type": "number",
+                "description": "Longitude (decimal)",
+                "format": "float",
+                "example": -2.123456
+            },
+            "date_updated": {
+                "$id": "#root/items/date_updated", 
+                "title": "Date_updated", 
+                "type": "string",
+                "description": "Date and time when the group details were last updated.",
+                "format": "date-time",
+                "example": "2022-08-29T09:12:33.001"
+            },
+            "date_walks_events_updated": {
+                "$id": "#root/items/date_walks_events_updated", 
+                "title": "Date_walks_events_updated", 
+                "type": "string",
+                "description": "Date and time of the last time any of the group's walks or events were last updated.\nDefault is 1970-01-01T00:00:00.\n",
+                "format": "date-time",
+                "example": "2022-08-29T09:12:33.001"
+            }
+        }
+    }
+}

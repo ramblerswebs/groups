@@ -15,7 +15,9 @@ class Options {
         self::$thisclass = $this;
 
         foreach ($_GET as $key => $value) {
-            $this->gets[$key] = htmlspecialchars($value);
+            if ($value !== 'netbeans-xdebug') {
+                $this->gets[$key] = htmlspecialchars($value);
+            }
         }
         foreach ($_POST as $key => $value) {
             $this->posts[$key] = htmlspecialchars($value);

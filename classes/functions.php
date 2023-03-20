@@ -87,92 +87,61 @@ class Functions {
     }
 
     public static function errorEmail($feed, $error) {
-//        require_once 'classes/phpmailer/src/PHPMailer.php';
-//        require_once 'classes/phpmailer/src/SMTP.php';
-//        require_once 'classes/phpmailer/src/Exception.php';
+
         date_default_timezone_set('Europe/London');
         $domain = "theramblers.org.uk";
         // Create a new PHPMailer instance
         $mailer = new PHPMailer\PHPMailer\PHPMailer;
-
         $mailer->setFrom("admin@" . $domain, $domain);
-        $mailer->addAddress(NOTIFY, 'Web Master');
+        $mailer->addAddress(NOTIFYEMAILADDRESS, 'Web Master');
         $mailer->isHTML(true);
         $mailer->Subject = "Ramblers Feed Error";
         $mailer->Body = "<p>Feed error found while running: " . TASK . "</p>" .
                 "<p>Feed: " . $feed . "</p>"
-                . "<p>Error: " . $error . "</p>";
-        $mailer->send();
-        echo "Error message sent" . BR;
-        echo "Task: " . TASK . BR;
-        echo "Feed: " . $feed . BR;
-        echo "Error: " . $error . BR;
+                . "<p>Error: " . $error . "</p>"
+                . "<p>Logfile: " . Logfile::name() . " may contain additional information.</p>";
+        $log=Logfile::fileGetContents();
+      //  if(!$log){
+            $mailer->Body=$mailer->Body.str_replace("\n","<br>",$log);
+      //  }
+        $okay = $mailer->send();
+        if (!$okay) {
+            Logfile::writeWhen("Error message sent");
+            Logfile::writeWhen("Task: " . TASK);
+            Logfile::writeWhen("Feed: " . $feed);
+            Logfile::writeWhen("Error: " . $error);
+        }
     }
 
-//    public static function checkJsonFileProperties($json, $properties) {
-//        $errors = 0;
-//        foreach ($json as $item) {
-//            $ok = self::checkJsonProperties($item, $properties);
-//            $errors += $ok;
-//        }
-//        return $errors;
-//    }
-//
-//    public static function checkJsonProperties($item, $properties) {
-//        foreach ($properties as $value) {
-//            if (!self::checkJsonProperty($item, $value)) {
-//                return 1;
-//            }
-//        }
-//
-//        return 0;
-//    }
-//
-//    private static function checkJsonProperty($item, $property) {
-//        if (property_exists($item, $property)) {
-//            return true;
-//        }
-//        return false;
-//    }
-
-    public static function getJsonFeed($feedurl, $properties) {
-        echo "Feed: " . $feedurl . BR;
+    public static function getJsonFeed($feedurl) {
+        Logfile::writeWhen("Feed: " . $feedurl);
         $json = file_get_contents($feedurl);
         if ($json === false) {
             self::errorEmail($feedurl, "Unable to read feed: file_get_contents failed");
             die();
-        } else {
-//            if (!functions::startsWith("$json", "[{")) {
-//                self::errorEmail($feedurl, "JSON code does not start with [{");
-//                die();
-//            }
         }
-        echo "---- Feed read" . BR;
+        Logfile::writeWhen("---- Feed read");
         $items = json_decode($json);
         if (json_last_error() == JSON_ERROR_NONE) {
-
-     //       if (functions::checkJsonFileProperties($items, $properties) > 0) {
-     //           self::errorEmail($feedurl, "Expected properties not found in JSON feed");
-     //           die();
-     //       }
+            
         } else {
             self::errorEmail($feedurl, "Error when decoding JSON feed");
             die();
         }
-        echo "---- JSON processed" . BR;
+        Logfile::writeWhen("---- JSON decoded");
         return $items;
     }
 
     public static function findSite($response, $code) {
-        if ($response->success){
-            $sites=$response->data;
-                foreach ($sites as $site) {
-            if ($site->code == $code) {
-                return $site;
+        if ($response->success) {
+            $sites = $response->data;
+            foreach ($sites as $site) {
+                if ($site->code == $code) {
+                    return $site;
+                }
             }
         }
-        }
-    
+
         return null;
     }
 

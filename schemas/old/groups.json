@@ -1,0 +1,179 @@
+ {
+  "openapi" : "3.0.0",
+  "info" : {
+    "title" : "Ramblers volunteers' API",
+    "description" : "# Summary\nAPI for volunteers to fetch details about walks, events and groups.\n\n# Security\nUses either Api key in the header or browser authentication (username/password)\n",
+    "version" : "1.0.0"
+  },
+  "servers" : [ {
+    "url" : "https://virtserver.swaggerhub.com/abateman/Ramblers-third-parties/1.0.0",
+    "description" : "SwaggerHub API Auto Mocking"
+  } ],
+  "security" : [ {
+    "ApiKeyAuth" : [ ]
+  } ],
+  "paths" : {
+   
+    "/api/volunteers/groups" : {
+      "get" : {
+        "summary" : "Groups",
+        "description" : "Groups",
+        "parameters" : [ {
+          "name" : "groups",
+          "in" : "query",
+          "required" : false,
+          "style" : "form",
+          "explode" : false,
+          "schema" : {
+            "type" : "array",
+            "items" : {
+              "type" : "string"
+            }
+          },
+          "example" : "DE01,DE02"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "OK",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "type" : "array",
+                  "items" : {
+                    "$ref" : "#/components/schemas/Group"
+                  }
+                }
+              }
+            }
+          },
+          "404" : {
+            "description" : "Not found",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "type" : "string"
+                },
+                "example" : "One or more groups not found"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components" : {
+    "schemas" : {
+  
+      "Group" : {
+        "type" : "object",
+        "properties" : {
+          "scope" : {
+            "type" : "string",
+            "description" : "Group or area indicator",
+            "enum" : [ "G", "A" ]
+          },
+          "group_code" : {
+            "type" : "string",
+            "description" : "Ramblers group code",
+            "example" : "SK01"
+          },
+          "area_code" : {
+            "type" : "string",
+            "description" : "Ramblers area code",
+            "example" : "SK"
+          },
+          "groups_in_area" : {
+            "type" : "string",
+            "description" : "Comma-separated codes for groups in the area.\nEmpty if the group is not an area.\n",
+            "example" : "DE01,DE02,DE03,DE04",
+            "nullable" : true
+          },
+          "name" : {
+            "type" : "string",
+            "example" : "Amber Valley"
+          },
+          "url" : {
+            "type" : "string",
+            "description" : "Ramblers website URL for group page",
+            "example" : "https://.ramblers.org.uk/go-walking/ramblers-groups/suffolk"
+          },
+          "external_url" : {
+            "type" : "string",
+            "description" : "External group website URL",
+            "example" : "https://example.com",
+            "nullable" : true
+          },
+          "description" : {
+            "type" : "string",
+            "description" : "Group description",
+            "example" : "Amber Valley Group was formed in 1976, based in mid-Derbyshire.\\r\\nWe now have 200+ members, from a variety of backgrounds, and age groups, but with a common love of the countyside.\\r\\nWhy not join us in some of our ...\n"
+          },
+          "latitude" : {
+            "$ref" : "#/components/schemas/Latitude"
+          },
+          "longitude" : {
+            "$ref" : "#/components/schemas/Longitude"
+          },
+          "date_updated" : {
+            "type" : "string",
+            "description" : "Date and time when the group details were last updated.",
+            "format" : "date-time",
+            "example" : "2022-08-29T09:12:33.001Z"
+          },
+          "date_walks_events_updated" : {
+            "type" : "string",
+            "description" : "Date and time of the last time any of the group's walks or events were last updated.\nDefault is 1970-01-01T00:00:00.\n",
+            "format" : "date-time",
+            "example" : "2022-08-29T09:12:33.001Z"
+          }
+        }
+      },
+  
+      "Latitude" : {
+        "maximum" : 90,
+        "minimum" : -90,
+        "type" : "number",
+        "description" : "Latitude (decimal)",
+        "format" : "float",
+        "example" : 52.123456
+      },
+      "Longitude" : {
+        "maximum" : 180,
+        "minimum" : -180,
+        "type" : "number",
+        "description" : "Longitude (decimal)",
+        "format" : "float",
+        "example" : -2.123456
+      },
+ 
+      "SearchResultsSummary" : {
+        "type" : "object",
+        "properties" : {
+          "count" : {
+            "type" : "integer",
+            "example" : 1000
+          },
+          "offset" : {
+            "type" : "integer",
+            "example" : 0
+          },
+          "limit" : {
+            "type" : "integer",
+            "example" : 1000
+          },
+          "total" : {
+            "type" : "integer",
+            "example" : 4321
+          }
+        }
+      }
+    },
+    "securitySchemes" : {
+      "ApiKeyAuth" : {
+        "type" : "apiKey",
+        "in" : "header",
+        "name" : "X-API-KEY"
+      }
+    }
+  }
+}

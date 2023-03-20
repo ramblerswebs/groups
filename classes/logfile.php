@@ -15,7 +15,7 @@ class Logfile {
     static function create($name) {
         $subname = date("YmdHis");
         self::$logfilename = $name . $subname . ".log";
-        self::$logfile = fopen(self::$logfilename, "w") or die("Unable to open logfile file!");
+        self::$logfile = fopen(self::$logfilename, "w+") or die("Unable to open logfile file!");
         Logfile::writeWhen("Logfile " . $subname . ".log created");
         self::deleteOldFiles();
         self::$errors = [];
@@ -40,6 +40,11 @@ class Logfile {
         }
     }
 
+    static function fileGetContents() {
+        $text = file_get_contents(self::$logfilename);
+        return $text;
+    }
+
     static function write($text) {
         if (isset(self::$logfile)) {
             fwrite(self::$logfile, $text . "\n");
@@ -53,7 +58,7 @@ class Logfile {
     }
 
     static function writeError($text) {
-        self::$noerrors+=1;
+        self::$noerrors += 1;
         self::writeWhen(" ERROR: " . $text);
         self::addError($text);
     }
