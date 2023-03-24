@@ -848,14 +848,14 @@
         "groupCode": "CF03",
         "name": "Perth & District Group",
         "url": "https:\/\/beta.ramblers.org.uk\/go-walking\/ramblers-groups\/perth-district-group",
-        "groupUrl": "https:\/\/ramblers.org.uk\/perth-district",
+        "groupUrl": "https:\/\/www.perthramblers.org.uk\/",
         "description": "We are the Perth & District Ramblers. We open the way for everyone in our local community to enjoy the pleasures of walking.",
         "latitude": 56.42983059109,
         "longitude": -3.6473693527297,
         "areaCode": "CF",
         "groupsInArea": null,
         "areaName": "Forth Valley, Fife & Tayside Area",
-        "dateUpdated": "2023-02-11T00:51:50Z",
+        "dateUpdated": "2023-03-23T00:50:42Z",
         "rwStatus": "Hosted"
     },
     "CF04": {
@@ -885,7 +885,7 @@
         "areaCode": "CF",
         "groupsInArea": null,
         "areaName": "Forth Valley, Fife & Tayside Area",
-        "dateUpdated": "2023-02-11T00:51:50Z",
+        "dateUpdated": "2023-03-23T00:50:42Z",
         "rwStatus": ""
     },
     "CF06": {
@@ -3536,14 +3536,14 @@
         "groupCode": "LE02",
         "name": "Leicester & District Group",
         "url": "https:\/\/beta.ramblers.org.uk\/go-walking\/ramblers-groups\/leicester-district-group",
-        "groupUrl": "https:\/\/www.ramblers.org.uk\/leicester",
+        "groupUrl": "https:\/\/www.ramblers-leicester.org.uk\/",
         "description": "We are the Leicester & District Ramblers. We open the way for everyone in our local community to enjoy the pleasures of walking.",
         "latitude": 52.594577388573,
         "longitude": -1.178466188504,
         "areaCode": "LE",
         "groupsInArea": null,
         "areaName": "Leicestershire & Rutland Area",
-        "dateUpdated": "2023-02-11T00:51:50Z",
+        "dateUpdated": "2023-03-21T00:50:38Z",
         "rwStatus": "Hosted"
     },
     "LE03": {
@@ -4505,7 +4505,7 @@
         "groupsInArea": null,
         "areaName": "Greater Manchester & High Peak Area",
         "dateUpdated": "2023-02-11T00:50:40Z",
-        "rwStatus": "Tobetransferred"
+        "rwStatus": "Hosted"
     },
     "MR07": {
         "scope": "G",
@@ -8868,7 +8868,7 @@
         "areaCode": "",
         "groupsInArea": null,
         "areaName": "",
-        "dateUpdated": "2023-03-20T10:20:50Z",
+        "dateUpdated": "2023-03-21T03:01:40Z",
         "rwStatus": ""
     },
     "ZA32": {
@@ -8877,13 +8877,13 @@
         "name": "Ramblers Wellbeing Walks Westmorland & Furness",
         "url": "https:\/\/beta.ramblers.org.uk\/go-walking\/wellbeing-walks-groups\/ramblers-wellbeing-walks-westmorland-furness",
         "groupUrl": null,
-        "description": "Join Ramblers Wellbeing Walks Westmoreland & Furness for short, local and accessible walks to help you get more active.",
+        "description": "Join Ramblers Wellbeing Walks Westmorland & Furness for short, local and accessible walks to help you get more active.",
         "latitude": 54.429277128471,
         "longitude": -2.8349184479225,
         "areaCode": "",
         "groupsInArea": null,
         "areaName": "",
-        "dateUpdated": "2023-03-20T10:22:26Z",
+        "dateUpdated": "2023-03-21T03:01:40Z",
         "rwStatus": ""
     },
     "ZB01": {

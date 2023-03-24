@@ -47,6 +47,9 @@ use JsonSchema\Validator;
 use JsonSchema\Constraints\Constraint;
 
 Logfile::writeWhen("Task started");
+// Get RW site list
+$sites = Functions::getJsonFeed(RAMBLERSWEBSSITES);
+// Get CO Groups feed
 $feed = GROUPSFEED . "&api-key=" . APIKEY;
 $groups = Functions::getJsonFeed($feed);
 
@@ -73,13 +76,12 @@ if ($validator->isValid()) {
         $items = explode('/', $error["pointer"]);
         $no = intval($items[1]);
         $group = $groups[$no];
-        Logfile::writeError($group->group_code . ": " . $error["property"] . " - " . $error["message"]);
+        Logfile::writeError($group->name . " " . $group->group_code . ": " . $error["property"] . " - " . $error["message"]);
     }
-    // email administrator
-    // die();
+    Logfile::writeWhen("---- JSON validation complete");
 }
+Logfile::writeWhen(" ");
 
-$sites = Functions::getJsonFeed(RAMBLERSWEBSSITES);
 usort($groups, function ($a, $b) {
     return strcmp($a->group_code, $b->group_code);
 });
@@ -90,13 +92,19 @@ $lastCode = null;
 $removedGroups = [];
 foreach ($groups as $key => $group) {
     $error = false;
+    $code = $group->group_code;
+    if ($code === "") {
+        $code = 'Code is blank';
+    }
+    $header = "Group: " . $group->name . " [" . $code . "]";
+    $errors = [];
     // Check for validity of data
     if ($group->group_code === "") {
-        Logfile::writeError("ERROR: Invalid blank Group Code, Group name: " . $group->name);
+        $errors[] = "Invalid blank Group Code";
         $error = true;
     }
     if ($group->group_code === $lastCode) {
-        Logfile::writeError("ERROR: More than one group has Group code: " . $group->group_code);
+        $errors[] = "More than one group has same Group code";
         $error = true;
     }
     $lastCode = $group->group_code;
@@ -106,16 +114,15 @@ foreach ($groups as $key => $group) {
         case "W":
             break;
         default:
-            Logfile::writeError("ERROR: Invalid Group Scope : " . $group->group_code);
-            $error = true;
+            $errors[] = "Invalid Group Scope : " . $group->scope;
     }
 
     if ($group->latitude === null OR $group->longitude === null) {
-        Logfile::writeError("ERROR: Latitude or longitude is NULL : " . $group->name);
+        $errors[] = "Latitude or longitude is NULL";
         $error = true;
     } else {
         if ($group->latitude === 0 OR $group->longitude === 0) {
-            Logfile::writeError("ERROR: Latitude or longitude is zero : " . $group->name);
+            $errors[] = "Latitude or longitude is zero";
             $error = true;
         }
     }
@@ -128,30 +135,40 @@ foreach ($groups as $key => $group) {
             $okay = true;
         }
         if (!$okay) {
-            Logfile::writeError("ERROR: Invalid External url for Group code: " . $group->group_code . "<ul><li>URL: " . $group->external_url . "</li></ul>");
+            $errors[] = "Invalid External URL: " . $group->external_url;
             $error = true;
         }
     }
     if ($error) {
+        Logfile::writeWhen($header);
+        echo $header;
+        echo "<ul>";
+        foreach ($errors as $value) {
+            Logfile::writeError("&nbsp;&nbsp;&nbsp;&nbsp;" . $value);
+            echo "<li>" . $value . "</li>";
+        }
+        echo "</ul>";
         $errorFound = true;
         array_push($removedGroups, $group);
         unset($groups[$key]);
     }
 }
 if ($errorFound) {
-    $msg = "ERRORS found in CORE data from CENTRAL OFFICE feed.";
-    Functions::errorEmail(GROUPSFEED, $msg);
-    echo "<p>" . $msg . "</p>";
-    $msg = "Groups removed from RW group feed";
-    Logfile::writeWhen($msg);
-    echo "<p>" . $msg . "</p>";
+
+    $msg1 = "Groups removed from RW group feed";
+    Logfile::writeWhen($msg1);
+    echo "<p>" . $msg1 . "</p>";
     echo "<ol>";
     foreach ($removedGroups as $key => $value) {
-        $msg = "        Name: " . $value->name . ", code: " . $value->group_code;
-        Logfile::writeWhen($msg);
-        echo "<li>" . $msg . "</li>";
+        $msg2 = $value->name . ", code: " . $value->group_code;
+        Logfile::writeWhen("&nbsp;&nbsp;&nbsp;&nbsp;" . $msg2);
+        echo "<li>" . $msg2 . "</li>";
     }
     echo "</ol>";
+    Logfile::writeWhen("Sending error email");
+    $msg3 = "ERRORS found in CORE data from CENTRAL OFFICE feed.";
+    echo "<p>" . $msg3 . "</p>";
+    Functions::errorEmail(GROUPSFEED, $msg3);
 }
 
 Logfile::writeWhen("Cross referencing Central Office and Ramblers-webs data");
@@ -162,8 +179,8 @@ foreach ($groups as $key => $group) {
     if ($site != null) {
         if ($site->status === "Hosted" or $site->status === "HostedDNSSet") {
             if (!Functions::contains($site->domain, $group->external_url)) {
-                Logfile::writeError("WARNING: Group web site URL/address does not match. Central Office and Ramblers-Webs.org.uk have different URLs for the group's website. Group Code: " . $group->group_code . ", Group Name: " . $group->name .", Group web page: ".$group->url. ", Central Office URL for group website: " . $group->external_url . ", Ramblers-Webs URL for group website: https://" . $site->domain);
-                echo "WARNING: Group web site URL/address does not match. Central Office and Ramblers-Webs.org.uk have different URLs for the group's web site.<ul><li>Group Code: " . $group->group_code . "</li><li> Group Name: " . $group->name . "</li><li>Group web page: ".$group->url."</li><li>Central Office URL for group website: " . $group->external_url . "</li><li>Ramblers-Webs URL for group website: https://" . $site->domain . "</li></ul>";
+                Logfile::writeError("WARNING: Group web site URL/address does not match. Central Office and Ramblers-Webs.org.uk have different URLs for the group's website. Group Code: " . $group->group_code . ", Group Name: " . $group->name . ", Group web page: " . $group->url . ", Central Office URL for group website: " . $group->external_url . ", Ramblers-Webs URL for group website: https://" . $site->domain);
+                echo "WARNING: Group web site URL/address does not match. Central Office and Ramblers-Webs.org.uk have different URLs for the group's web site.<ul><li>Group Code: " . $group->group_code . "</li><li> Group Name: " . $group->name . "</li><li>Group web page: " . $group->url . "</li><li>Central Office URL for group website: " . $group->external_url . "</li><li>Ramblers-Webs URL for group website: https://" . $site->domain . "</li></ul>";
             }
         }
     }

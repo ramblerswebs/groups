@@ -1855,20 +1855,6 @@
     },
     {
         "scope": "G",
-        "group_code": "LE02",
-        "area_code": "LE",
-        "groups_in_area": null,
-        "name": "Leicester & District Group",
-        "url": "https:\/\/beta.ramblers.org.uk\/go-walking\/ramblers-groups\/leicester-district-group",
-        "external_url": "https:\/\/www.ramblers.org.uk\/leicester",
-        "description": "We are the Leicester & District Ramblers. We open the way for everyone in our local community to enjoy the pleasures of walking.",
-        "latitude": 52.594577388573,
-        "longitude": -1.178466188504,
-        "date_updated": "2023-02-11T00:51:50",
-        "date_walks_events_updated": "2022-09-28T19:16:30"
-    },
-    {
-        "scope": "G",
         "group_code": "LE03",
         "area_code": "LE",
         "groups_in_area": null,
@@ -2369,6 +2355,20 @@
         "date_walks_events_updated": "1970-01-01T00:00:00"
     },
     {
+        "scope": "G",
+        "group_code": "LE02",
+        "area_code": "LE",
+        "groups_in_area": null,
+        "name": "Leicester & District Group",
+        "url": "https:\/\/beta.ramblers.org.uk\/go-walking\/ramblers-groups\/leicester-district-group",
+        "external_url": "https:\/\/www.ramblers-leicester.org.uk\/",
+        "description": "We are the Leicester & District Ramblers. We open the way for everyone in our local community to enjoy the pleasures of walking.",
+        "latitude": 52.594577388573,
+        "longitude": -1.178466188504,
+        "date_updated": "2023-03-21T00:50:38",
+        "date_walks_events_updated": "2022-09-28T19:16:30"
+    },
+    {
         "scope": "W",
         "group_code": "ZA32",
         "area_code": "",
@@ -2376,10 +2376,10 @@
         "name": "Ramblers Wellbeing Walks Westmorland & Furness",
         "url": "https:\/\/beta.ramblers.org.uk\/go-walking\/wellbeing-walks-groups\/ramblers-wellbeing-walks-westmorland-furness",
         "external_url": null,
-        "description": "Join Ramblers Wellbeing Walks Westmoreland & Furness for short, local and accessible walks to help you get more active.",
+        "description": "Join Ramblers Wellbeing Walks Westmorland & Furness for short, local and accessible walks to help you get more active.",
         "latitude": 54.429277128471,
         "longitude": -2.8349184479225,
-        "date_updated": "2023-03-20T10:22:26",
+        "date_updated": "2023-03-21T03:01:40",
         "date_walks_events_updated": "1970-01-01T00:00:00"
     },
     {
@@ -5524,35 +5524,6 @@
         "date_walks_events_updated": "1970-01-01T00:00:00"
     },
     {
-        "scope": "A",
-        "group_code": "CF",
-        "area_code": "CF",
-        "groups_in_area": [
-            "CF01",
-            "CF02",
-            "CF03",
-            "CF04",
-            "CF05",
-            "CF06",
-            "CF08",
-            "CF09",
-            "CF10",
-            "CF11",
-            "CF12",
-            "CF14",
-            "CF15",
-            "CF50"
-        ],
-        "name": "Forth Valley, Fife & Tayside Area",
-        "url": "https:\/\/beta.ramblers.org.uk\/go-walking\/ramblers-groups\/areas\/forth-valley-fife-tayside-area",
-        "external_url": "https:\/\/www.ramblers.org.uk\/forth-valley-fife-tayside",
-        "description": "We are the Forth Valley, Fife and Tayside Area Ramblers. We open the way for everyone in our local community to enjoy the pleasures of walking.",
-        "latitude": 56.474323189519,
-        "longitude": -3.6622557503129,
-        "date_updated": "2023-02-11T00:50:40",
-        "date_walks_events_updated": "1970-01-01T00:00:00"
-    },
-    {
         "scope": "G",
         "group_code": "SR08",
         "area_code": "SR",
@@ -6386,6 +6357,35 @@
         "description": "We are the London Strollers. We open the way for everyone in our local community to enjoy the pleasures of walking.",
         "latitude": 51.473919203225,
         "longitude": -0.087178367028779,
+        "date_updated": "2023-02-11T00:50:40",
+        "date_walks_events_updated": "1970-01-01T00:00:00"
+    },
+    {
+        "scope": "A",
+        "group_code": "CF",
+        "area_code": "CF",
+        "groups_in_area": [
+            "CF01",
+            "CF02",
+            "CF03",
+            "CF04",
+            "CF05",
+            "CF06",
+            "CF08",
+            "CF09",
+            "CF10",
+            "CF11",
+            "CF12",
+            "CF14",
+            "CF15",
+            "CF50"
+        ],
+        "name": "Forth Valley, Fife & Tayside Area",
+        "url": "https:\/\/beta.ramblers.org.uk\/go-walking\/ramblers-groups\/areas\/forth-valley-fife-tayside-area",
+        "external_url": "https:\/\/www.ramblers.org.uk\/forth-valley-fife-tayside",
+        "description": "We are the Forth Valley, Fife and Tayside Area Ramblers. We open the way for everyone in our local community to enjoy the pleasures of walking.",
+        "latitude": 56.474323189519,
+        "longitude": -3.6622557503129,
         "date_updated": "2023-02-11T00:50:40",
         "date_walks_events_updated": "1970-01-01T00:00:00"
     },
@@ -7791,34 +7791,6 @@
     },
     {
         "scope": "G",
-        "group_code": "CF03",
-        "area_code": "CF",
-        "groups_in_area": null,
-        "name": "Perth & District Group",
-        "url": "https:\/\/beta.ramblers.org.uk\/go-walking\/ramblers-groups\/perth-district-group",
-        "external_url": "https:\/\/ramblers.org.uk\/perth-district",
-        "description": "We are the Perth & District Ramblers. We open the way for everyone in our local community to enjoy the pleasures of walking.",
-        "latitude": 56.42983059109,
-        "longitude": -3.6473693527297,
-        "date_updated": "2023-02-11T00:51:50",
-        "date_walks_events_updated": "1970-01-01T00:00:00"
-    },
-    {
-        "scope": "G",
-        "group_code": "CF05",
-        "area_code": "CF",
-        "groups_in_area": null,
-        "name": "Dundee & District Group",
-        "url": "https:\/\/beta.ramblers.org.uk\/go-walking\/ramblers-groups\/dundee-district-group",
-        "external_url": "https:\/\/www.ramblers.org.uk\/dundee-district",
-        "description": "We are the Dundee & District Ramblers. We open the way for everyone in our local community to enjoy the pleasures of walking.",
-        "latitude": 56.509545880816,
-        "longitude": -2.9280635442532,
-        "date_updated": "2023-02-11T00:51:50",
-        "date_walks_events_updated": "1970-01-01T00:00:00"
-    },
-    {
-        "scope": "G",
         "group_code": "CF10",
         "area_code": "CF",
         "groups_in_area": null,
@@ -8523,6 +8495,34 @@
         "latitude": 51.464515359535,
         "longitude": -0.095145857912113,
         "date_updated": "2023-02-11T00:50:40",
+        "date_walks_events_updated": "1970-01-01T00:00:00"
+    },
+    {
+        "scope": "G",
+        "group_code": "CF03",
+        "area_code": "CF",
+        "groups_in_area": null,
+        "name": "Perth & District Group",
+        "url": "https:\/\/beta.ramblers.org.uk\/go-walking\/ramblers-groups\/perth-district-group",
+        "external_url": "https:\/\/www.perthramblers.org.uk\/",
+        "description": "We are the Perth & District Ramblers. We open the way for everyone in our local community to enjoy the pleasures of walking.",
+        "latitude": 56.42983059109,
+        "longitude": -3.6473693527297,
+        "date_updated": "2023-03-23T00:50:42",
+        "date_walks_events_updated": "1970-01-01T00:00:00"
+    },
+    {
+        "scope": "G",
+        "group_code": "CF05",
+        "area_code": "CF",
+        "groups_in_area": null,
+        "name": "Dundee & District Group",
+        "url": "https:\/\/beta.ramblers.org.uk\/go-walking\/ramblers-groups\/dundee-district-group",
+        "external_url": "https:\/\/www.ramblers.org.uk\/dundee-district",
+        "description": "We are the Dundee & District Ramblers. We open the way for everyone in our local community to enjoy the pleasures of walking.",
+        "latitude": 56.509545880816,
+        "longitude": -2.9280635442532,
+        "date_updated": "2023-03-23T00:50:42",
         "date_walks_events_updated": "1970-01-01T00:00:00"
     },
     {
@@ -10056,29 +10056,6 @@
         "date_walks_events_updated": "1970-01-01T00:00:00"
     },
     {
-        "scope": "A",
-        "group_code": "LE",
-        "area_code": "LE",
-        "groups_in_area": [
-            "LE01",
-            "LE02",
-            "LE03",
-            "LE04",
-            "LE05",
-            "LE06",
-            "LE07",
-            "LE50"
-        ],
-        "name": "Leicestershire & Rutland Area",
-        "url": "https:\/\/beta.ramblers.org.uk\/go-walking\/ramblers-groups\/areas\/leicestershire-rutland-area",
-        "external_url": "https:\/\/leicsra.org.uk\/",
-        "description": "We are the Leicestershire & Rutland Area Ramblers. We open the way for everyone in our local community to enjoy the pleasures of walking.",
-        "latitude": 52.665757683913,
-        "longitude": -1.043175595944,
-        "date_updated": "2023-02-11T00:50:40",
-        "date_walks_events_updated": "1970-01-01T00:00:00"
-    },
-    {
         "scope": "G",
         "group_code": "ER07",
         "area_code": "ER",
@@ -10794,6 +10771,29 @@
         "date_walks_events_updated": "1970-01-01T00:00:00"
     },
     {
+        "scope": "A",
+        "group_code": "LE",
+        "area_code": "LE",
+        "groups_in_area": [
+            "LE01",
+            "LE02",
+            "LE03",
+            "LE04",
+            "LE05",
+            "LE06",
+            "LE07",
+            "LE50"
+        ],
+        "name": "Leicestershire & Rutland Area",
+        "url": "https:\/\/beta.ramblers.org.uk\/go-walking\/ramblers-groups\/areas\/leicestershire-rutland-area",
+        "external_url": "https:\/\/leicsra.org.uk\/",
+        "description": "We are the Leicestershire & Rutland Area Ramblers. We open the way for everyone in our local community to enjoy the pleasures of walking.",
+        "latitude": 52.665757683913,
+        "longitude": -1.043175595944,
+        "date_updated": "2023-02-11T00:50:40",
+        "date_walks_events_updated": "1970-01-01T00:00:00"
+    },
+    {
         "scope": "W",
         "group_code": "ZA31",
         "area_code": "",
@@ -10804,7 +10804,7 @@
         "description": "Join Ramblers Wellbeing Walks Cumberland for short, local and accessible walks to help you get more active.",
         "latitude": 54.660647037614,
         "longitude": -3.3621242563094,
-        "date_updated": "2023-03-20T10:20:50",
+        "date_updated": "2023-03-21T03:01:40",
         "date_walks_events_updated": "1970-01-01T00:00:00"
     }
 ]
