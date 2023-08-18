@@ -17,8 +17,10 @@ define("NOTIFYEMAILADDRESS", "feeds@ramblers-webs.org.uk");
 define("TASK", "https://groups.theramblers.org.uk/task.php");
 //define("GROUPSFEED", "https://uat-be.ramblers.nomensa.xyz/api/volunteers/groups?");
 define("GROUPSFEED", "https://walks-manager.ramblers.org.uk/api/volunteers/groups?");
-define("APIKEY", "9a68085e6f159f6b2ecd0b7533805282");
-define("RAMBLERSWEBSSITES", "https://ramblers-webs.org.uk/index.php?option=com_rw_accounts&task=domains.controller&format=json");
+//define("APIKEY", "9a68085e6f159f6b2ecd0b7533805282");
+define("APIKEY", "853aa876db0a37ff0e6780db2d2addee");
+// define("RAMBLERSWEBSSITES", "https://ramblers-webs.org.uk/index.php?option=com_rw_accounts&task=domains.controller&format=json");
+define("RAMBLERSWEBSSITES", "https://ramblers-webs.org.uk/index.php?option=com_rw_accounts&view=domains&format=json");
 define("BR", "<br>");
 
 // 	First Release
