@@ -1,217 +1,1728 @@
-[{
-        "scope": "A",
-        "groupCode": "AV",
-        "name": "Avon",
-        "url": "https:\/\/www.ramblers.org.uk\/go-walking\/group-finder\/areas\/avon.aspx",
-        "description": "This Area covers most of the former County of Avon.",
-        "latitude": 51.4614944,
-        "longitude": -2.56757545,
-        "areaname": "Avon",
-        "website": "avon-ramblers.org.uk",
-        "status": "Hosted",
-        "distance": 2.906033221172795
-    }, {
-        "scope": "G",
-        "groupCode": "AV50",
-        "name": "Brunel Walking & Activity",
-        "url": "https:\/\/www.ramblers.org.uk\/go-walking\/group-finder\/areas\/avon\/groups\/brunel-walking--activity.aspx",
-        "description": "A group for walkers based in the Bristol & Bath area. Brunel has two sub-groups: one for walkers in their 20s & 30s and a second aimed at those in their 40s & 50s with busy working lives.",
-        "latitude": 51.4614944,
-        "longitude": -2.56757545,
-        "areaname": "Avon",
-        "website": "brunelwalking.org.uk",
-        "status": "Hosted",
-        "distance": 2.906033221172795
-    }, {
-        "scope": "G",
-        "groupCode": "AV07",
-        "name": "Kingswood",
-        "url": "https:\/\/www.ramblers.org.uk\/go-walking\/group-finder\/areas\/avon\/groups\/kingswood.aspx",
-        "description": "Our groups help local people enjoy walking and protect the places we all love to walk. Most groups organise regular walks led by local experts \u2013 a great way to get outside, make new friends and discover how walking boosts your health and happiness.",
-        "latitude": 51.462,
-        "longitude": -2.416244,
-        "areaname": "Avon",
-        "website": "kingswoodramblers.org.uk",
-        "status": "Hosted",
-        "distance": 7.599446148721234
-    }, {
-        "scope": "G",
-        "groupCode": "AV04",
-        "name": "Bath",
-        "url": "https:\/\/www.ramblers.org.uk\/go-walking\/group-finder\/areas\/avon\/groups\/bath.aspx",
-        "description": "We organise two walks a week on a Sunday.  One will be 5-6 miles long, the other between 8-10 miles.",
-        "latitude": 51.3745,
-        "longitude": -2.41462064,
-        "areaname": "Avon",
-        "website": "bathramblers.org.uk",
-        "status": "Hosted",
-        "distance": 12.152524279328142
-    }, {
-        "scope": "G",
-        "groupCode": "AV03",
-        "name": "Southwold (Yate)",
-        "url": "https:\/\/www.ramblers.org.uk\/go-walking\/group-finder\/areas\/avon\/groups\/southwold-yate.aspx",
-        "description": "Like the outdoors, the changing seasons, walking in areas of outstanding natural beauty. So do we \u2013 at Southwold (Yate) Ramblers. We are at the southern end of the Cotswolds. Come and try us.",
-        "latitude": 51.55392,
-        "longitude": -2.39915156,
-        "distance": 13.723956986207074
-    }, {
-        "scope": "G",
-        "groupCode": "AV02",
-        "name": "Somer Valley",
-        "url": "https:\/\/www.ramblers.org.uk\/go-walking\/group-finder\/areas\/avon\/groups\/somer-valley.aspx",
-        "description": "Somer Valley Ramblers walk most Sundays and also the first and third Wednesday of each month.  The Sunday walks vary in length and are usually within a forty miles radius of Midsomer Norton\/ Radstock area.  The Wednesday walks are usually between ...",
-        "latitude": 51.32921,
-        "longitude": -2.56270146,
-        "areaname": "Avon",
-        "website": "somervalleyramblers.org.uk",
-        "status": "Hosted",
-        "distance": 14.653226620260831
-    }, {
-        "scope": "G",
-        "groupCode": "AV05",
-        "name": "Severnside",
-        "url": "https:\/\/www.ramblers.org.uk\/go-walking\/group-finder\/areas\/avon\/groups\/severnside.aspx",
-        "description": "Our Group is based in Bradley Stoke, north Bristol. Ideally sited for access to the Cotswolds, Mendips, Wiltshire Downs, Wye Valley and Brecon Beacons.",
-        "latitude": 51.58872,
-        "longitude": -2.576816,
-        "areaname": "Avon",
-        "website": "severnside-ramblers.org.uk",
-        "status": "Hosted",
-        "distance": 14.853080434583758
-    }, {
-        "scope": "G",
-        "groupCode": "AV08",
-        "name": "Clevedon",
-        "url": "https:\/\/www.ramblers.org.uk\/go-walking\/group-finder\/areas\/avon\/groups\/clevedon.aspx",
-        "description": "Clevedon Ramblers Group love the outdoors, walking not only local walks but the Mendips, Quantocks Cotswolds and parts of Wales, and areas of outstanding beauty.\r\nNew walkers are always welcome.",
-        "latitude": 51.4278641,
-        "longitude": -2.747902,
-        "areaname": "Avon",
-        "website": "clevedonramblers.org.uk",
-        "status": "Hosted",
-        "distance": 15.774993740725687
-    }, {
-        "scope": "G",
-        "groupCode": "AV01",
-        "name": "Bristol",
-        "url": "https:\/\/www.ramblers.org.uk\/go-walking\/group-finder\/areas\/avon\/groups\/bristol.aspx",
-        "description": "The Bristol Group has about 800 members and arranges about 300 walks each year. Walks range from full day rambles across the Brecon Beacons to short walks in the city and the surrounding countryside.",
-        "latitude": 51.452652,
-        "longitude": -2.77058721,
-        "areaname": "Avon",
-        "website": "bristolramblers.org.uk",
-        "status": "Hosted",
-        "distance": 16.9734005683442
-    }, {
-        "scope": "G",
-        "groupCode": "SO06",
-        "name": "Woodspring",
-        "url": "https:\/\/www.ramblers.org.uk\/go-walking\/group-finder\/areas\/somerset\/groups\/woodspring.aspx",
-        "description": "Our groups help local people enjoy walking and protect the places we all love to walk. Most groups organise regular walks led by local experts \u2013 a great way to get outside, make new friends and discover how walking boosts your health and happiness.",
-        "latitude": 51.3469658,
-        "longitude": -2.85871983,
-        "areaname": "Somerset",
-        "website": "woodspringramblers.org.uk",
-        "status": "Hosted",
-        "distance": 26.236220307589807
-    }, {
-        "scope": "G",
-        "groupCode": "SO01",
-        "name": "Mendip",
-        "url": "https:\/\/www.ramblers.org.uk\/go-walking\/group-finder\/areas\/somerset\/groups\/mendip.aspx",
-        "description": "Mendip Group arranges shorter walks on a Thursday and longer walks on a Sunday. We have plenty of social events and pub walks and organise holidays and weekends away for our members. Our walks are usually in the Mendips - an Area of Outstanding ...",
-        "latitude": 51.20289,
-        "longitude": -2.544543,
-        "areaname": "Somerset",
-        "website": "mendipramblers.co.uk",
-        "status": "Hosted",
-        "distance": 28.50399071563055
-    }, {
-        "scope": "G",
-        "groupCode": "WE01",
-        "name": "North West Wiltshire",
-        "url": "https:\/\/www.ramblers.org.uk\/go-walking\/group-finder\/areas\/wiltshire--swindon\/groups\/north-west-wiltshire.aspx",
-        "description": "Where the Cotswolds Area of Outstanding Natural Beauty (AONB) meets the Wiltshire Downs can best describe the charming area in which the North West Wiltshire group regularly walk. ",
-        "latitude": 51.5094566,
-        "longitude": -2.09545922,
-        "distance": 30.324811163571212
-    }, {
-        "scope": "G",
-        "groupCode": "GG04",
-        "name": "Lower Wye",
-        "url": "https:\/\/www.ramblers.org.uk\/go-walking\/group-finder\/areas\/greater-gwent\/groups\/lower-wye.aspx",
-        "description": "Our area is the Lower Wye Valley, extending from Chepstow to Monmouth, an AONB. We also walk in the Royal Forest of Dean, Monmouthshire between the Rivers Usk and the Wye, The Black Mountains and The Brecon Beacons, sometimes further afield. All ...",
-        "latitude": 51.6899376,
-        "longitude": -2.797511,
-        "distance": 31.81396444645275
-    }, {
-        "scope": "G",
-        "groupCode": "GG01",
-        "name": "South Gwent",
-        "url": "https:\/\/www.ramblers.org.uk\/go-walking\/group-finder\/areas\/greater-gwent\/groups\/south-gwent.aspx",
-        "description": "Come and let us give you a warm South Gwent Ramblers welcome and share the the marvellous scenery and history of Monmouthshire, the Welsh Valleys and the Brecon Beacons National Park.",
-        "latitude": 51.5736732,
-        "longitude": -2.96189833,
-        "distance": 32.75933151908663
-    }, {
-        "scope": "G",
-        "groupCode": "GR03",
-        "name": "South Cotswold",
-        "url": "https:\/\/www.ramblers.org.uk\/go-walking\/group-finder\/areas\/gloucestershire\/groups\/south-cotswold.aspx",
-        "description": "We walk in the very scenic South Cotswolds and Berkeley Vale and often further afield 2, 3 and even 4 times a week. If you like the idea of walking and making new friends do come along and try us out.",
-        "latitude": 51.7064629,
-        "longitude": -2.26615286,
-        "distance": 32.852634252463346
-    }, {
-        "scope": "G",
-        "groupCode": "WE05",
-        "name": "West Wiltshire",
-        "url": "https:\/\/www.ramblers.org.uk\/go-walking\/group-finder\/areas\/wiltshire--swindon\/groups\/west-wiltshire.aspx",
-        "description": "The West Wiltshire area comprises five main towns i.e. Bradford-on-Avon, Melksham, Trowbridge, Warminster, Westbury, and many villages. The open spaces of the Westbury hills - chalk downlands to the south and east of Warminster - offer walking ...",
-        "latitude": 51.2547073,
-        "longitude": -2.15305614,
-        "distance": 34.43619886744344
-    }, {
-        "scope": "G",
-        "groupCode": "GR02",
-        "name": "Forest of Dean",
-        "url": "https:\/\/www.ramblers.org.uk\/go-walking\/group-finder\/areas\/gloucestershire\/groups\/forest-of-dean.aspx",
-        "description": "Our groups help local people enjoy walking and protect the places we all love to walk. Most groups organise regular walks led by local experts \u2013 a great way to get outside, make new friends and discover how walking boosts your health and happiness.",
-        "latitude": 51.8284569,
-        "longitude": -2.48978758,
-        "distance": 41.16083702360769
-    }, {
-        "scope": "A",
-        "groupCode": "GG",
-        "name": "Greater Gwent",
-        "url": "https:\/\/www.ramblers.org.uk\/go-walking\/group-finder\/areas\/greater-gwent.aspx",
-        "description": "Our areas help local people enjoy walking and protect the places we all love to walk. Areas help look after paths and green spaces, open up new places to explore and act as the leading voice on walking matters near you. They also support our local ...",
-        "latitude": 51.711235,
-        "longitude": -2.97456646,
-        "distance": 41.8103126697424
-    }, {
-        "scope": "G",
-        "groupCode": "SO02",
-        "name": "Sedgemoor",
-        "url": "https:\/\/www.ramblers.org.uk\/go-walking\/group-finder\/areas\/somerset\/groups\/sedgemoor.aspx",
-        "description": "We organise regular walks led by local experienced walkers; a great way to get outside, make new friends and discover how walking boosts your health and happiness.",
-        "latitude": 51.1847725,
-        "longitude": -2.95255327,
-        "areaname": "Somerset",
-        "website": "sedgemoorramblers.co.uk",
-        "status": "Hosted",
-        "distance": 42.53109831763309
-    }, {
-        "scope": "A",
-        "groupCode": "WE",
-        "name": "Wiltshire & Swindon",
-        "url": "https:\/\/www.ramblers.org.uk\/go-walking\/group-finder\/areas\/wiltshire--swindon.aspx",
-        "description": "The Wiltshire Ramblers currently total some 1,550 members divided into 6 groups, one of which is our young persons group for 20 to 40 year olds. Our groups work towards the charitable aims of Ramblers in different ways, but one thing they all do is ...",
-        "latitude": 51.31582,
-        "longitude": -1.93135464,
-        "areaname": "Wiltshire & Swindon",
-        "website": "wiltsswindonramblers.org.uk",
-        "status": "Hosted",
-        "distance": 44.215458992055936
-    }]
+{
+    "success": true,
+    "message": null,
+    "messages": null,
+    "data": [{
+            "code": "BU50",
+            "groupname": "Hike MK Group",
+            "areaname": "Buckinghamshire, Milton Keynes & West Middlesex Area",
+            "domain": "hikemk.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "AV",
+            "groupname": "",
+            "areaname": "Avon Area",
+            "domain": "avon-ramblers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "AV01",
+            "groupname": "Bristol Group",
+            "areaname": "Avon Area",
+            "domain": "bristolramblers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "AV02",
+            "groupname": "Somer Valley Group",
+            "areaname": "Avon Area",
+            "domain": "somervalleyramblers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "AV04",
+            "groupname": "Bath Group",
+            "areaname": "Avon Area",
+            "domain": "bathramblers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "AV05",
+            "groupname": "Severnside Group",
+            "areaname": "Avon Area",
+            "domain": "severnside-ramblers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "AV07",
+            "groupname": "Kingswood Group",
+            "areaname": "Avon Area",
+            "domain": "kingswoodramblers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "AV08",
+            "groupname": "Clevedon Group",
+            "areaname": "Avon Area",
+            "domain": "clevedonramblers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "AV50",
+            "groupname": "Brunel Walking & Activity Group",
+            "areaname": "Avon Area",
+            "domain": "brunelwalking.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "BK01",
+            "groupname": "East Berkshire Group",
+            "areaname": "Berkshire Area",
+            "domain": "eastberksramblers.org",
+            "status": "Hosted"
+        }, {
+            "code": "BK02",
+            "groupname": "Mid Berks Group",
+            "areaname": "Berkshire Area",
+            "domain": "mbra.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "BK03",
+            "groupname": "West Berkshire Group",
+            "areaname": "Berkshire Area",
+            "domain": "wberksramblers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "BK05",
+            "groupname": "Pang Valley Group",
+            "areaname": "Berkshire Area",
+            "domain": "pvramblers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "BU01",
+            "groupname": "Amersham & District Group",
+            "areaname": "Buckinghamshire, Milton Keynes & West Middlesex Area",
+            "domain": "amershamramblers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "BU04",
+            "groupname": "Hillingdon Group",
+            "areaname": "Buckinghamshire, Milton Keynes & West Middlesex Area",
+            "domain": "hillingdonramblers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "BU",
+            "groupname": "",
+            "areaname": "Buckinghamshire, Milton Keynes & West Middlesex Area",
+            "domain": "bucks-wmiddx-ramblers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "BU09",
+            "groupname": "Wycombe District Group",
+            "areaname": "Buckinghamshire, Milton Keynes & West Middlesex Area",
+            "domain": "wycomberamblers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "BU40",
+            "groupname": "Chilterns Weekend Walkers Group",
+            "areaname": "Buckinghamshire, Milton Keynes & West Middlesex Area",
+            "domain": "chilternsww.co.uk",
+            "status": "Hosted"
+        }, {
+            "code": "BU51",
+            "groupname": "Chiltern Young Walkers Group",
+            "areaname": "Buckinghamshire, Milton Keynes & West Middlesex Area",
+            "domain": "chilterns2030s.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "CB02",
+            "groupname": "Huntingdonshire Group",
+            "areaname": "Cambridgeshire & Peterborough Area",
+            "domain": "huntsramblers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "CB04",
+            "groupname": "Fenland Group",
+            "areaname": "Cambridgeshire & Peterborough Area",
+            "domain": "fenlandramblers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "CB50",
+            "groupname": "Peterborough Walkers Group",
+            "areaname": "Cambridgeshire & Peterborough Area",
+            "domain": "pyw.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "CA02",
+            "groupname": "Dinefwr Group",
+            "areaname": "Carmarthenshire Area",
+            "domain": "dinefwrramblers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "",
+            "groupname": "locahaberandlorn-ramblers.org.uk",
+            "areaname": "Central",
+            "domain": "locahaberandlorn-ramblers.org.uk",
+            "status": "Unknown"
+        }, {
+            "code": "",
+            "groupname": "medalroutes.org.uk",
+            "areaname": "Central",
+            "domain": "medalroutes.org.uk",
+            "status": "HostedDNSSet"
+        }, {
+            "code": "",
+            "groupname": "ramblers-webs.org.uk",
+            "areaname": "Central",
+            "domain": "ramblers-webs.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "",
+            "groupname": "ramblersforum.org.uk",
+            "areaname": "Central",
+            "domain": "ramblersforum.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "",
+            "groupname": "theramblers.org.uk",
+            "areaname": "Central",
+            "domain": "theramblers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "",
+            "groupname": "walkinginfo.co.uk",
+            "areaname": "Central",
+            "domain": "walkinginfo.co.uk",
+            "status": "Hosted"
+        }, {
+            "code": "",
+            "groupname": "wessexrailwaywalks.org.uk",
+            "areaname": "Central",
+            "domain": "wessexrailwaywalks.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "CE02",
+            "groupname": "Cardigan & District Group",
+            "areaname": "Ceredigion Area",
+            "domain": "cardiganramblers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "CH03",
+            "groupname": "South Cheshire Group",
+            "areaname": "Cheshire East Area",
+            "domain": "ramblerssouthcheshire.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "CY03",
+            "groupname": "Dumfries & District Group",
+            "areaname": "Clydesdale to Solway Area",
+            "domain": "dumfriesramblers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "DE",
+            "groupname": "",
+            "areaname": "Derbyshire Area",
+            "domain": "derbyshireramblers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "DE01",
+            "groupname": "Amber Valley Group",
+            "areaname": "Derbyshire Area",
+            "domain": "ambervalleyramblers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "DE02",
+            "groupname": "Derby & S Derbyshire Group",
+            "areaname": "Derbyshire Area",
+            "domain": "derbyramblers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "DE03",
+            "groupname": "Erewash District Group",
+            "areaname": "Derbyshire Area",
+            "domain": "erewashramblers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "DE04",
+            "groupname": "Derbyshire Dales Group",
+            "areaname": "Derbyshire Area",
+            "domain": "derbyshiredalesramblers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "DN02",
+            "groupname": "Exeter & District Group",
+            "areaname": "Devon Area",
+            "domain": "exeterramblers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "DN16",
+            "groupname": "Teignmouth & Dawlish Group",
+            "areaname": "Devon Area",
+            "domain": "teignramblers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "DN51",
+            "groupname": "Devon Bootlegs Group",
+            "areaname": "Devon Area",
+            "domain": "devonbootlegs.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "DT50",
+            "groupname": "Dorset Young Walkers Group",
+            "areaname": "Dorset Area",
+            "domain": "dorsetyoungwalkers.org.uk",
+            "status": "DELETED"
+        }, {
+            "code": "ER",
+            "groupname": "",
+            "areaname": "East Yorkshire & Derwent Area",
+            "domain": "eastyorkshireramblers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "ER04",
+            "groupname": "Ryedale Group",
+            "areaname": "East Yorkshire & Derwent Area",
+            "domain": "ryedaleramblers.org.uk",
+            "status": "DELETED"
+        }, {
+            "code": "ER05",
+            "groupname": "Scarborough & District Group",
+            "areaname": "East Yorkshire & Derwent Area",
+            "domain": "scarboroughramblers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "ER07",
+            "groupname": "York Group",
+            "areaname": "East Yorkshire & Derwent Area",
+            "domain": "yorkramblers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "ER50",
+            "groupname": "East Yorks Get Your Boots On Group",
+            "areaname": "East Yorkshire & Derwent Area",
+            "domain": "gybo.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "ES",
+            "groupname": "",
+            "areaname": "Essex Area",
+            "domain": "essexarearamblers.co.uk",
+            "status": "Hosted"
+        }, {
+            "code": "ES01",
+            "groupname": "Brentwood Group",
+            "areaname": "Essex Area",
+            "domain": "brentwoodramblers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "ES02",
+            "groupname": "Colchester Group",
+            "areaname": "Essex Area",
+            "domain": "colchester-ramblers.co.uk",
+            "status": "Hosted"
+        }, {
+            "code": "ES04",
+            "groupname": "Thurrock Group",
+            "areaname": "Essex Area",
+            "domain": "thurrockramblers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "ES05",
+            "groupname": "West Essex Group",
+            "areaname": "Essex Area",
+            "domain": "west-essexramblers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "ES09",
+            "groupname": "Basildon Greenway Group",
+            "areaname": "Essex Area",
+            "domain": "greenwayramblers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "ES10",
+            "groupname": "Tendring District Group",
+            "areaname": "Essex Area",
+            "domain": "tendringramblers.co.uk",
+            "status": "Hosted"
+        }, {
+            "code": "ES14",
+            "groupname": "Stort Valley Group",
+            "areaname": "Essex Area",
+            "domain": "stortvalleyramblers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "ES15",
+            "groupname": "Uttlesford Group",
+            "areaname": "Essex Area",
+            "domain": "uttlesfordramblers.org",
+            "status": "Hosted"
+        }, {
+            "code": "ES30",
+            "groupname": "Essex Friends Group",
+            "areaname": "Essex Area",
+            "domain": "essexfriendsramblers.org.uk",
+            "status": "HostedNotproduction"
+        }, {
+            "code": "ES31",
+            "groupname": "East Essex Friends Group",
+            "areaname": "Essex Area",
+            "domain": "eastessexfriends.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "ES32",
+            "groupname": "Lea Valley Friends Group",
+            "areaname": "Essex Area",
+            "domain": "leavalleyfriends.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "ES50",
+            "groupname": "Hike Essex Group",
+            "areaname": "Essex Area",
+            "domain": "hikeessex.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "CF",
+            "groupname": "",
+            "areaname": "Forth Valley, Fife & Tayside Area",
+            "domain": "fvft-ramblers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "CF01",
+            "groupname": "Dalgety Bay & District Group",
+            "areaname": "Forth Valley, Fife & Tayside Area",
+            "domain": "dalgetybayramblers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "SW01",
+            "groupname": "Cardiff Group",
+            "areaname": "Glamorgan Area",
+            "domain": "cardifframblers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "SW07",
+            "groupname": "cynonvalleyramblers.org.uk",
+            "areaname": "Central",
+            "domain": "cynonvalleyramblers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "SW12",
+            "groupname": "Taff Ely Group",
+            "areaname": "Glamorgan Area",
+            "domain": "taffelyramblers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "SW50",
+            "groupname": "Tiger Bay Ramblers Group",
+            "areaname": "Glamorgan Area",
+            "domain": "tigerbayramblers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "GR",
+            "groupname": "",
+            "areaname": "Gloucestershire",
+            "domain": "gloucestershireramblers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "GR01",
+            "groupname": "Cirencester Group",
+            "areaname": "Gloucestershire",
+            "domain": "cirencesterramblers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "GR05",
+            "groupname": "Cleeve Group",
+            "areaname": "Gloucestershire",
+            "domain": "cleeveramblers.org.uk",
+            "status": "DELETED"
+        }, {
+            "code": "GR50",
+            "groupname": "Gloucestershire Walking Group",
+            "areaname": "Gloucestershire",
+            "domain": "gwg.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "MR",
+            "groupname": "",
+            "areaname": "Greater Manchester & High Peak Area",
+            "domain": "manchester-ramblers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "MR02",
+            "groupname": "Bury Group",
+            "areaname": "Greater Manchester & High Peak Area",
+            "domain": "buryramblers.com",
+            "status": "Hosted"
+        }, {
+            "code": "MR03",
+            "groupname": "Rochdale Group",
+            "areaname": "Greater Manchester & High Peak Area",
+            "domain": "rochdaleramblers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "MR04",
+            "groupname": "High Peak",
+            "areaname": "Greater Manchester & High Peak Area",
+            "domain": "newmillsramblers.co.uk",
+            "status": "NotbeingRENEWED"
+        }, {
+            "code": "MR10",
+            "groupname": "Manchester and Salford Ramblers Group",
+            "areaname": "Greater Manchester & High Peak Area",
+            "domain": "manchesterandsalfordramblers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "MR12",
+            "groupname": "Tameside Ramblers Group",
+            "areaname": "Greater Manchester & High Peak Area",
+            "domain": "tamesideramblers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "MR40",
+            "groupname": "Manchester Weekend Walkers  Group",
+            "areaname": "Greater Manchester & High Peak Area",
+            "domain": "mwwalkers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "MR50",
+            "groupname": "Mad Walkers (Manchester & District) Group",
+            "areaname": "Greater Manchester & High Peak Area",
+            "domain": "madwalkers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "MR70",
+            "groupname": "Manchester Coach Rambles Group",
+            "areaname": "Greater Manchester & High Peak Area",
+            "domain": "manchestercoachrambles.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "WX",
+            "groupname": "",
+            "areaname": "Hampshire Area",
+            "domain": "hampshireramblers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "WX01",
+            "groupname": "Alton Group",
+            "areaname": "Hampshire Area",
+            "domain": "altonramblers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "WX02",
+            "groupname": "Andover Group",
+            "areaname": "Hampshire Area",
+            "domain": "andoverramblers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "WX04",
+            "groupname": "New Forest Group",
+            "areaname": "Hampshire Area",
+            "domain": "newforestramblers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "WX06",
+            "groupname": "Portsmouth Group",
+            "areaname": "Hampshire Area",
+            "domain": "portsmouthramblers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "WX09",
+            "groupname": "South East Hants Group",
+            "areaname": "Hampshire Area",
+            "domain": "sehampshireramblers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "WX12",
+            "groupname": "Eastleigh Group",
+            "areaname": "Hampshire Area",
+            "domain": "eastleighramblers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "WX13",
+            "groupname": "North Hampshire Downs Group",
+            "areaname": "Hampshire Area",
+            "domain": "northhampshiredownsramblers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "WX51",
+            "groupname": "Hampshire 40+ Walking Group",
+            "areaname": "Hampshire Area",
+            "domain": "hampshirewalkers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "HW",
+            "groupname": "",
+            "areaname": "Herefordshire Area",
+            "domain": "herefordshireramblers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "HW",
+            "groupname": "",
+            "areaname": "Herefordshire Area",
+            "domain": "herefordshiretrail.com",
+            "status": "Hosted"
+        }, {
+            "code": "HF01",
+            "groupname": "West Herts Group",
+            "areaname": "Hertfordshire & North Middlesex Area",
+            "domain": "westhertsramblers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "HF02",
+            "groupname": "East Hertfordshire Group",
+            "areaname": "Hertfordshire & North Middlesex Area",
+            "domain": "easthertsramblers.co.uk",
+            "status": "Hosted"
+        }, {
+            "code": "HF03",
+            "groupname": "North Hertfordshire Group",
+            "areaname": "Hertfordshire & North Middlesex Area",
+            "domain": "nhrg.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "HF06",
+            "groupname": "Watford & Three Rivers Group",
+            "areaname": "Hertfordshire & North Middlesex Area",
+            "domain": "watfordand3riversramblers.org.uk",
+            "status": "NotbeingRENEWED"
+        }, {
+            "code": "HF51",
+            "groupname": "Herts Weekend Walkers",
+            "areaname": "Hertfordshire & North Middlesex Area",
+            "domain": "hertsww.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "HF52",
+            "groupname": "Stag Walkers Group",
+            "areaname": "Hertfordshire & North Middlesex Area",
+            "domain": "stagwalkers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "SC01",
+            "groupname": "Badenoch & Strathspey Group",
+            "areaname": "Highland & Islands Area",
+            "domain": "badenochandstrathspeyramblers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "SC02",
+            "groupname": "Lochaber & Lorn Group",
+            "areaname": "Highland & Islands Area",
+            "domain": "lochaberandlorn-ramblers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "IL",
+            "groupname": "",
+            "areaname": "Inner London Area",
+            "domain": "innerlondonramblers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "IL",
+            "groupname": "",
+            "areaname": "Inner London Area",
+            "domain": "londonramblers.org.uk",
+            "status": "DELETED"
+        }, {
+            "code": "IL01",
+            "groupname": "Blackheath Group",
+            "areaname": "Inner London Area",
+            "domain": "blackheathramblers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "IL03",
+            "groupname": "South Bank Group",
+            "areaname": "Inner London Area",
+            "domain": "southbankramblers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "IL05",
+            "groupname": "Hammersmith & Wandsworth Group",
+            "areaname": "Inner London Area",
+            "domain": "hfwramblers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "IL06",
+            "groupname": "Kensington, Chelsea & Westminster Group",
+            "areaname": "Inner London Area",
+            "domain": "kcwramblers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "IL08",
+            "groupname": "West London Group",
+            "areaname": "Inner London Area",
+            "domain": "westlondonramblers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "IL40",
+            "groupname": "London Strollers Group",
+            "areaname": "Inner London Area",
+            "domain": "londonstrollers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "IL50",
+            "groupname": "Metropolitan Walkers Group",
+            "areaname": "Inner London Area",
+            "domain": "metropolitan-walkers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "IL51",
+            "groupname": "Capital Walkers Group",
+            "areaname": "Inner London Area",
+            "domain": "capitalwalkers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "IW50",
+            "groupname": "Wight Sole Group",
+            "areaname": "Isle of Wight Area",
+            "domain": "wightsole.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "LD",
+            "groupname": "",
+            "areaname": "Lake District Area",
+            "domain": "lakedistrictramblers.org.uk",
+            "status": "HostedNotproduction"
+        }, {
+            "code": "LD01",
+            "groupname": "Furness Group",
+            "areaname": "Lake District Area",
+            "domain": "furnessramblers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "LD04",
+            "groupname": "Lancaster Group",
+            "areaname": "Lake District Area",
+            "domain": "lancasterramblers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "LD50",
+            "groupname": "Summit Good Group",
+            "areaname": "Lake District Area",
+            "domain": "summitgood.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "LE",
+            "groupname": "",
+            "areaname": "Leicestershire & Rutland Area",
+            "domain": "leicsra.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "LE01",
+            "groupname": "Hinckley Group",
+            "areaname": "Leicestershire & Rutland Area",
+            "domain": "hinckleyramblers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "LE03",
+            "groupname": "Melton Mowbray Group",
+            "areaname": "Leicestershire & Rutland Area",
+            "domain": "meltonramblers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "LE06",
+            "groupname": "Loughborough & District Group",
+            "areaname": "Leicestershire & Rutland Area",
+            "domain": "loughboroughramblers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "LE50",
+            "groupname": "Leicestershire & Rutland Walking Group",
+            "areaname": "Leicestershire & Rutland Area",
+            "domain": "lrwg.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "LI",
+            "groupname": "",
+            "areaname": "Lincolnshire Area",
+            "domain": "lincolnshireramblers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "LI08",
+            "groupname": "Sleaford Ramblers Group",
+            "areaname": "Lincolnshire Area",
+            "domain": "sleafordramblers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "LB50",
+            "groupname": "Edinburgh Young Walkers Group",
+            "areaname": "Lothian & Borders Area",
+            "domain": "eyw.org.uk",
+            "status": "HostedDNSSet"
+        }, {
+            "code": "LL02",
+            "groupname": "Liverpool Group",
+            "areaname": "Merseyside and West Cheshire Area",
+            "domain": "liverpoolramblers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "LL03",
+            "groupname": "Wirral Group",
+            "areaname": "Merseyside and West Cheshire Area",
+            "domain": "wirralramblers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "ML",
+            "groupname": "",
+            "areaname": "Mid Lancashire Area",
+            "domain": "lancashire-ramblers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "ML02",
+            "groupname": "Fylde Group",
+            "areaname": "Mid Lancashire Area",
+            "domain": "fylderamblers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "ML03",
+            "groupname": "Garstang & District Group",
+            "areaname": "Mid Lancashire Area",
+            "domain": "garstangramblers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "ML05",
+            "groupname": "South Ribble Group",
+            "areaname": "Mid Lancashire Area",
+            "domain": "southribbleramblers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "MC",
+            "groupname": "",
+            "areaname": "North and Mid Cheshire Area",
+            "domain": "nmc-ramblers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "MC50",
+            "groupname": "Cheshire Walkers Group",
+            "areaname": "North and Mid Cheshire Area",
+            "domain": "cheshirewalkers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "LN02",
+            "groupname": "Clitheroe Group",
+            "areaname": "North East Lancashire Area",
+            "domain": "clitheroeramblers.co.uk",
+            "status": "Hosted"
+        }, {
+            "code": "LN04",
+            "groupname": "Rossendale Group",
+            "areaname": "North East Lancashire Area",
+            "domain": "rossendale-ramblers.co.uk",
+            "status": "Hosted"
+        }, {
+            "code": "SL",
+            "groupname": "",
+            "areaname": "North Strathclyde Area",
+            "domain": "northstrathclyderamblers.org.uk",
+            "status": "HostedNotproduction"
+        }, {
+            "code": "SL01",
+            "groupname": "Glasgow Group",
+            "areaname": "North Strathclyde Area",
+            "domain": "glasgowramblers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "SL03",
+            "groupname": "Cumbernauld & Kilsyth Group",
+            "areaname": "North Strathclyde Area",
+            "domain": "cumbernauldkilsythramblers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "SL06",
+            "groupname": "Helensburgh & West Dunbartonshire Group",
+            "areaname": "North Strathclyde Area",
+            "domain": "hwdramblers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "LW",
+            "groupname": "",
+            "areaname": "North Wales Area",
+            "domain": "ramblersnorthwales.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "LW02",
+            "groupname": "Conwy Valley Group",
+            "areaname": "North Wales Area",
+            "domain": "conwyvalleyra.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "LW03",
+            "groupname": "Ynys Mon Group",
+            "areaname": "North Wales Area",
+            "domain": "ynysmonramblers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "LW06",
+            "groupname": "Meirionnydd Group",
+            "areaname": "North Wales Area",
+            "domain": "meirionnyddramblers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "LW07",
+            "groupname": "Berwyn Group",
+            "areaname": "North Wales Area",
+            "domain": "berwynra.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "LW08",
+            "groupname": "Vale of Clwyd Group",
+            "areaname": "North Wales Area",
+            "domain": "voc-ramblers.org.uk",
+            "status": "Tobetransferred"
+        }, {
+            "code": "LW09",
+            "groupname": "Deeside Group",
+            "areaname": "North Wales Area",
+            "domain": "deesideramblers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "NY06",
+            "groupname": "Northallerton Group",
+            "areaname": "North Yorks & South Durham Area",
+            "domain": "northallertonramblers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "NP",
+            "groupname": "",
+            "areaname": "Northamptonshire Area",
+            "domain": "northantsramblers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "NP01",
+            "groupname": "Ramblers Northampton Group",
+            "areaname": "Northamptonshire Area",
+            "domain": "northamptonra.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "NN02",
+            "groupname": "Chester le Street Group",
+            "areaname": "Northumbria Area",
+            "domain": "chester-le-street-ramblers.org.uk",
+            "status": "DELETED"
+        }, {
+            "code": "CY02",
+            "groupname": "Biggar Group",
+            "areaname": "Clydesdale to Solway Area",
+            "domain": "biggarramblers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "NE",
+            "groupname": "",
+            "areaname": "Nottinghamshire Area",
+            "domain": "nottsarearamblers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "NE01",
+            "groupname": "Newark Group",
+            "areaname": "Nottinghamshire Area",
+            "domain": "newarkramblers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "NE07",
+            "groupname": "Rushcliffe Group",
+            "areaname": "Nottinghamshire Area",
+            "domain": "rushclifferamblers.org",
+            "status": "Hosted"
+        }, {
+            "code": "NE08",
+            "groupname": "Broxtowe Group",
+            "areaname": "Nottinghamshire Area",
+            "domain": "broxtoweramblers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "NE09",
+            "groupname": "Gedling Group",
+            "areaname": "Nottinghamshire Area",
+            "domain": "gedlingramblers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "NE10",
+            "groupname": "Mansfield & Sherwood Ramblers",
+            "areaname": "Nottinghamshire Area",
+            "domain": "mansfieldramblers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "NE11",
+            "groupname": "Southwell Group",
+            "areaname": "Nottinghamshire Area",
+            "domain": "southwellramblers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "NE50",
+            "groupname": "Notts Derby Walking Group",
+            "areaname": "Nottinghamshire Area",
+            "domain": "ndwg.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "OX",
+            "groupname": "",
+            "areaname": "Oxfordshire Area",
+            "domain": "ramblers-oxon.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "OX40",
+            "groupname": "Oxon Weekend Walkers Group",
+            "areaname": "Oxfordshire Area",
+            "domain": "oxonww.org",
+            "status": "Hosted"
+        }, {
+            "code": "PE01",
+            "groupname": "Pembrokeshire Group",
+            "areaname": "Pembrokeshire Area",
+            "domain": "pembrokeshireramblers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "RB",
+            "groupname": "",
+            "areaname": "Renfrewshire, Cowal & Bute Area",
+            "domain": "rcbarearamblers.org.uk",
+            "status": "HostedNotproduction"
+        }, {
+            "code": "RB02",
+            "groupname": "Eastwood Group",
+            "areaname": "Renfrewshire, Cowal & Bute Area",
+            "domain": "eastwood-ramblers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "RB03",
+            "groupname": "Inverclyde Group",
+            "areaname": "Renfrewshire, Cowal & Bute Area",
+            "domain": "inverclyderamblers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "RB04",
+            "groupname": "Isle of Bute Group",
+            "areaname": "Renfrewshire, Cowal & Bute Area",
+            "domain": "buteramblers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "SS",
+            "groupname": "",
+            "areaname": "Shropshire Area",
+            "domain": "shropshireramblers.org.uk",
+            "status": "HostedNotproduction"
+        }, {
+            "code": "SS02",
+            "groupname": "Telford & East Shropshire Group",
+            "areaname": "Shropshire Area",
+            "domain": "tesramblers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "SS04",
+            "groupname": "Oswestry Group",
+            "areaname": "Shropshire Area",
+            "domain": "oswestryramblers.org.uk",
+            "status": "Unknown"
+        }, {
+            "code": "SS50",
+            "groupname": "Shropshire Young Ramblers Group",
+            "areaname": "Shropshire Area",
+            "domain": "syr.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "SO",
+            "groupname": "",
+            "areaname": "Somerset Area",
+            "domain": "somersetramblers.co.uk",
+            "status": "Hosted"
+        }, {
+            "code": "SO01",
+            "groupname": "Mendip Group",
+            "areaname": "Somerset Area",
+            "domain": "mendipramblers.co.uk",
+            "status": "Hosted"
+        }, {
+            "code": "SO02",
+            "groupname": "Sedgemoor Group",
+            "areaname": "Somerset Area",
+            "domain": "sedgemoorramblers.co.uk",
+            "status": "Hosted"
+        }, {
+            "code": "SO03",
+            "groupname": "South Somerset Group",
+            "areaname": "Somerset Area",
+            "domain": "southsomersetramblers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "SO04",
+            "groupname": "West Somerset Group",
+            "areaname": "Somerset Area",
+            "domain": "westsomersetramblers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "SO06",
+            "groupname": "Woodspring Group",
+            "areaname": "Somerset Area",
+            "domain": "woodspringramblers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "SD02",
+            "groupname": "Doncaster Group",
+            "areaname": "South Yorks & NE Derbyshire Area",
+            "domain": "doncasterramblers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "NS",
+            "groupname": "",
+            "areaname": "Staffordshire Area",
+            "domain": "staffordshireramblers.org",
+            "status": "HostedDNSSet"
+        }, {
+            "code": "NS03",
+            "groupname": "Stoke\/Newcastle Group",
+            "areaname": "Staffordshire Area",
+            "domain": "stokeandnewcastleramblers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "NS04",
+            "groupname": "Tamworth & Lichfield Ramblers",
+            "areaname": "Staffordshire Area",
+            "domain": "tamworthandlichfieldramblers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "NS05",
+            "groupname": "Mid Staffordshire Group",
+            "areaname": "Staffordshire Area",
+            "domain": "midstaffsramblers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "NS08",
+            "groupname": "Walsall Group",
+            "areaname": "Staffordshire Area",
+            "domain": "walsallramblers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "NS10",
+            "groupname": "Chase & District Group",
+            "areaname": "Staffordshire Area",
+            "domain": "chaseramblers.org.uk",
+            "status": "HostedNotproduction"
+        }, {
+            "code": "NS11",
+            "groupname": "leekramblers.org.uk",
+            "areaname": "Central",
+            "domain": "leekramblers.org.uk",
+            "status": "Unknown"
+        }, {
+            "code": "NS12",
+            "groupname": "Biddulph Group",
+            "areaname": "Staffordshire Area",
+            "domain": "biddulphramblers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "SK",
+            "groupname": "",
+            "areaname": "Suffolk Area",
+            "domain": "suffolkramblers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "SK01",
+            "groupname": "Bury St Edmunds Group",
+            "areaname": "Suffolk Area",
+            "domain": "burystedmundsramblers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "SK02",
+            "groupname": "Ipswich & District Group",
+            "areaname": "Suffolk Area",
+            "domain": "ipswichramblers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "SK03",
+            "groupname": "Newmarket & District Group",
+            "areaname": "Suffolk Area",
+            "domain": "newmarketramblers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "SK04",
+            "groupname": "Stowmarket Group",
+            "areaname": "Suffolk Area",
+            "domain": "stowmarketramblers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "SK05",
+            "groupname": "Sudbury Group",
+            "areaname": "Suffolk Area",
+            "domain": "sudburyramblers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "SR",
+            "groupname": "",
+            "areaname": "Surrey Area",
+            "domain": "surreyramblers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "SR02",
+            "groupname": "East Surrey Walkers Group",
+            "areaname": "Surrey Area",
+            "domain": "eastsurreywalkers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "SR03",
+            "groupname": "Farnham & District Group",
+            "areaname": "Surrey Area",
+            "domain": "farnhamramblers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "SR04",
+            "groupname": "Godalming & Haslemere Group",
+            "areaname": "Surrey Area",
+            "domain": "gandhramblers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "SR05",
+            "groupname": "Kingston Group",
+            "areaname": "Surrey Area",
+            "domain": "kingston-ramblers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "SR06",
+            "groupname": "Mole Valley Group",
+            "areaname": "Surrey Area",
+            "domain": "molevalleyramblers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "SR07",
+            "groupname": "Richmond Group",
+            "areaname": "Surrey Area",
+            "domain": "richmondramblers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "SR10",
+            "groupname": "Epsom & Ewell Group",
+            "areaname": "Surrey Area",
+            "domain": "epsomandewellramblers.co.uk",
+            "status": "Hosted"
+        }, {
+            "code": "SR11",
+            "groupname": "Guildford Group",
+            "areaname": "Surrey Area",
+            "domain": "guildfordramblers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "SR12",
+            "groupname": "Reigate Group",
+            "areaname": "Surrey Area",
+            "domain": "reigateramblers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "SR13",
+            "groupname": "Staines Group",
+            "areaname": "Surrey Area",
+            "domain": "stainesramblers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "SR14",
+            "groupname": "Sutton and Wandle Valley Group",
+            "areaname": "Surrey Area",
+            "domain": "suttonwandleramblers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "SR50",
+            "groupname": "Surrey Young Walkers Group",
+            "areaname": "Surrey Area",
+            "domain": "surreyyoungwalkers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "SR51",
+            "groupname": "Surrey and Beyond Ramblers (SABRE) Group",
+            "areaname": "Surrey Area",
+            "domain": "sabre-walkers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "SX",
+            "groupname": "",
+            "areaname": "Sussex Area",
+            "domain": "sussexramblers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "SX",
+            "groupname": "",
+            "areaname": "Sussex Area",
+            "domain": "sussexborderpath.co.uk",
+            "status": "Hosted"
+        }, {
+            "code": "SX01",
+            "groupname": "Arun-Adur Group",
+            "areaname": "Sussex Area",
+            "domain": "arun-adur-ramblers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "SX02",
+            "groupname": "Brighton & Hove Group",
+            "areaname": "Sussex Area",
+            "domain": "bahr.org.uk",
+            "status": "DELETED"
+        }, {
+            "code": "SX04",
+            "groupname": "Mid Sussex Group",
+            "areaname": "Sussex Area",
+            "domain": "midsussexramblers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "SX05",
+            "groupname": "Crawley & North Sussex Group",
+            "areaname": "Sussex Area",
+            "domain": "crawleyramblers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "SX08",
+            "groupname": "Rother Group",
+            "areaname": "Sussex Area",
+            "domain": "rotherramblers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "SX09",
+            "groupname": "High Weald Walkers Group",
+            "areaname": "Sussex Area",
+            "domain": "highwealdwalkers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "SX50",
+            "groupname": "Sussex Young Walkers Group",
+            "areaname": "Sussex Area",
+            "domain": "sussex-young-walkers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "WK03",
+            "groupname": "Mid Warwickshire Group",
+            "areaname": "Warwickshire Area",
+            "domain": "midwarksramblers.org",
+            "status": "Hosted"
+        }, {
+            "code": "WK04",
+            "groupname": "Rugby Group",
+            "areaname": "Warwickshire Area",
+            "domain": "rugbyramblers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "WK05",
+            "groupname": "Stratford upon Avon Group",
+            "areaname": "Warwickshire Area",
+            "domain": "stratfordramblers.com",
+            "status": "Hosted"
+        }, {
+            "code": "WK07",
+            "groupname": "Solihull Group",
+            "areaname": "Warwickshire Area",
+            "domain": "solihullramblers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "WK08",
+            "groupname": "Sutton Coldfield Group",
+            "areaname": "Warwickshire Area",
+            "domain": "suttoncoldfieldramblers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "WK10",
+            "groupname": "South Birmingham Group",
+            "areaname": "Warwickshire Area",
+            "domain": "sbramblers.co.uk",
+            "status": "NotbeingRENEWED"
+        }, {
+            "code": "WK10",
+            "groupname": "South Birmingham Group",
+            "areaname": "Warwickshire Area",
+            "domain": "sbramblers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "WK51",
+            "groupname": "West Midlands Walking Group",
+            "areaname": "Warwickshire Area",
+            "domain": "wmwg.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "WK53",
+            "groupname": "West Midlands 40+  Group",
+            "areaname": "Warwickshire Area",
+            "domain": "wm40plus.org.uk",
+            "status": "NotbeingRENEWED"
+        }, {
+            "code": "WR06",
+            "groupname": "Harrogate Group",
+            "areaname": "West Riding Area",
+            "domain": "harrogateramblers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "WR09",
+            "groupname": "Leeds Group",
+            "areaname": "West Riding Area",
+            "domain": "leedsramblers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "WR11",
+            "groupname": "Ripon Group",
+            "areaname": "West Riding Area",
+            "domain": "riponramblers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "WE",
+            "groupname": "",
+            "areaname": "Wiltshire & Swindon Area",
+            "domain": "wiltsswindonramblers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "WO",
+            "groupname": "",
+            "areaname": "Worcestershire Area",
+            "domain": "worcestershireramblers.org.uk",
+            "status": "NotbeingRENEWED"
+        }, {
+            "code": "WO03",
+            "groupname": "Redditch Group",
+            "areaname": "Worcestershire Area",
+            "domain": "redditchramblers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "NY07",
+            "groupname": "Richmondshire Group",
+            "areaname": "North Yorks & South Durham Area",
+            "domain": "richmondshireramblers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "IW01",
+            "groupname": "Isle of Wight Group",
+            "areaname": "Isle of Wight Area",
+            "domain": "iowramblers.com",
+            "status": "Hosted"
+        }, {
+            "code": "WR10",
+            "groupname": "Lower Wharfedale Group",
+            "areaname": "West Riding Area",
+            "domain": "lowerwharfedaleramblers.co.uk",
+            "status": "Hosted"
+        }, {
+            "code": "LW04",
+            "groupname": "Wrexham Group",
+            "areaname": "North Wales Area",
+            "domain": "wrexhamramblers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "LN05",
+            "groupname": "Burnley & Pendle Group",
+            "areaname": "North East Lancashire Area",
+            "domain": "burnleypendleramblers.co.uk",
+            "status": "Hosted"
+        }, {
+            "code": "SD07",
+            "groupname": "Dearne Valley Group",
+            "areaname": "South Yorks & NE Derbyshire Area",
+            "domain": "dearnevalleyramblers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "DN07",
+            "groupname": "Plymouth Group",
+            "areaname": "Devon Area",
+            "domain": "plymouthramblers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "ES08",
+            "groupname": "Havering & East London Group",
+            "areaname": "Essex Area",
+            "domain": "haveringeastlondonramblers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "SD",
+            "groupname": "",
+            "areaname": "South Yorks & NE Derbyshire Area",
+            "domain": "synedramblers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "KT01",
+            "groupname": "Ashford (Kent) Group",
+            "areaname": "Kent Area",
+            "domain": "ashfordramblers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "KT07",
+            "groupname": "Sevenoaks Group",
+            "areaname": "Kent Area",
+            "domain": "sevenoaksramblers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "SR15",
+            "groupname": "Surrey Heath Group",
+            "areaname": "Surrey Area",
+            "domain": "surreyheathramblers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "LE02",
+            "groupname": "Leicester & District Group",
+            "areaname": "Leicestershire & Rutland Area",
+            "domain": "ramblers-leicester.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "WK09",
+            "groupname": "Castle Bromwich Group",
+            "areaname": "Warwickshire Area",
+            "domain": "castlebromwichramblers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "NS06",
+            "groupname": "Stourbridge Group",
+            "areaname": "Staffordshire Area",
+            "domain": "stourbridgeramblers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "WO05",
+            "groupname": "Evesham Group",
+            "areaname": "Worcestershire Area",
+            "domain": "eveshamramblers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "LI02",
+            "groupname": "gainsboroughramblers.org.uk",
+            "areaname": "Central",
+            "domain": "gainsboroughramblers.org.uk",
+            "status": "NotbeingRENEWED"
+        }, {
+            "code": "LE07",
+            "groupname": "Lutterworth Group",
+            "areaname": "Leicestershire & Rutland Area",
+            "domain": "lutterworthramblers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "ML04",
+            "groupname": "Preston Group",
+            "areaname": "Mid Lancashire Area",
+            "domain": "prestonramblers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "SD03",
+            "groupname": "Sheffield Group",
+            "areaname": "South Yorks & NE Derbyshire Area",
+            "domain": "sheffieldramblers.org",
+            "status": "Hosted"
+        }, {
+            "code": "NS01",
+            "groupname": "East Staffordshire Group",
+            "areaname": "Staffordshire Area",
+            "domain": "eaststaffsramblers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "LD05",
+            "groupname": "Penrith Group",
+            "areaname": "Lake District Area",
+            "domain": "penrithramblers.org.uk",
+            "status": "Tobetransferred"
+        }, {
+            "code": "SW02",
+            "groupname": "Neath Port Talbot Group",
+            "areaname": "Glamorgan Area",
+            "domain": "neathporttalbotramblers.co.uk",
+            "status": "Tobetransferred"
+        }, {
+            "code": "HF",
+            "groupname": "",
+            "areaname": "Hertfordshire & North Middlesex Area",
+            "domain": "hnmramblers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "MR11",
+            "groupname": "Trafford Group",
+            "areaname": "Greater Manchester & High Peak Area",
+            "domain": "ramblers-trafford.co.uk",
+            "status": "Hosted"
+        }, {
+            "code": "WO06",
+            "groupname": "Worcester Group",
+            "areaname": "Worcestershire Area",
+            "domain": "worcesterramblers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "DN05",
+            "groupname": "North Devon Group",
+            "areaname": "Devon Area",
+            "domain": "northdevonramblers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "KT51",
+            "groupname": "West Kent Walking Group",
+            "areaname": "Kent Area",
+            "domain": "westkentwalkinggroup.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "KT04",
+            "groupname": "Tonbridge & Malling Group",
+            "areaname": "Kent Area",
+            "domain": "tonbridgeandmallingramblers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "DT05",
+            "groupname": "Bournemouth Happy Monday Ramblers Group",
+            "areaname": "Dorset Area",
+            "domain": "bournemouthmondayramblers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "WK06",
+            "groupname": "Southam Group",
+            "areaname": "Warwickshire Area",
+            "domain": "southamramblers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "CF03",
+            "groupname": "Perth & District Group",
+            "areaname": "Forth Valley, Fife & Tayside Area",
+            "domain": "perthramblers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "ES06",
+            "groupname": "Chelmer & Blackwater Group",
+            "areaname": "Essex Area",
+            "domain": "chelmerandblackwater-ramblers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "SO05",
+            "groupname": "Taunton Deane Group",
+            "areaname": "Somerset Area",
+            "domain": "tauntonramblers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "SX07",
+            "groupname": "Beachy Head Group",
+            "areaname": "Sussex Area",
+            "domain": "beachyheadramblers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "NS02",
+            "groupname": "Stone Group",
+            "areaname": "Staffordshire Area",
+            "domain": "stoneramblers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "WK",
+            "groupname": "",
+            "areaname": "Warwickshire Area",
+            "domain": "warwickshireramblers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "CE01",
+            "groupname": "Aberystwyth Group",
+            "areaname": "Ceredigion Area",
+            "domain": "aberystwythramblers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "OX50",
+            "groupname": "Hike Oxfordshire",
+            "areaname": "Oxfordshire Area",
+            "domain": "hikeoxfordshire.org",
+            "status": "Hosted"
+        }, {
+            "code": "WR50",
+            "groupname": "Take a Hike Group",
+            "areaname": "West Riding Area",
+            "domain": "takeahike.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "WR",
+            "groupname": "",
+            "areaname": "West Riding Area",
+            "domain": "ramblersyorkshire.org",
+            "status": "Hosted"
+        }, {
+            "code": "SD05",
+            "groupname": "Barnsley & Penistone Group",
+            "areaname": "South Yorks & NE Derbyshire Area",
+            "domain": "barnsleypenistoneramblers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "LB",
+            "groupname": "",
+            "areaname": "Lothian & Borders Area",
+            "domain": "lothian-borders-ramblers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "ML01",
+            "groupname": "Chorley Group",
+            "areaname": "Mid Lancashire Area",
+            "domain": "chorleyramblers.co.uk",
+            "status": "Hosted"
+        }, {
+            "code": "NE03",
+            "groupname": "Retford Group",
+            "areaname": "Nottinghamshire Area",
+            "domain": "retfordramblers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "NS04",
+            "groupname": "Tamworth & Lichfield Ramblers",
+            "areaname": "Staffordshire Area",
+            "domain": "lichfieldanddistrictramblers.org.uk",
+            "status": "DELETED"
+        }, {
+            "code": "ES03",
+            "groupname": "South East Essex Group",
+            "areaname": "Essex Area",
+            "domain": "southeastessexramblers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "SS05",
+            "groupname": "South Shropshire Group",
+            "areaname": "Shropshire Area",
+            "domain": "southshropshireramblers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "WX05",
+            "groupname": "North East Hants Group",
+            "areaname": "Hampshire Area",
+            "domain": "nehantsramblers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "WR01",
+            "groupname": "Bradford Group",
+            "areaname": "West Riding Area",
+            "domain": "bradfordramblers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "LB13",
+            "groupname": "Eildon Ramblers  Group",
+            "areaname": "Lothian & Borders Area",
+            "domain": "eildonramblers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "MR06",
+            "groupname": "Stockport Group",
+            "areaname": "Greater Manchester & High Peak Area",
+            "domain": "stockportramblers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "LB03",
+            "groupname": "Balerno Group",
+            "areaname": "Lothian & Borders Area",
+            "domain": "balernoramblers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "SL05",
+            "groupname": "Strathkelvin Group",
+            "areaname": "North Strathclyde Area",
+            "domain": "strathkelvinramblers.org.uk",
+            "status": "Tobetransferred"
+        }, {
+            "code": "MR04",
+            "groupname": "High Peak",
+            "areaname": "Greater Manchester & High Peak Area",
+            "domain": "highpeakramblers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "SR01",
+            "groupname": "Croydon Ramblers",
+            "areaname": "Surrey Area",
+            "domain": "",
+            "status": "Tobetransferred"
+        }, {
+            "code": "LB02",
+            "groupname": "Livingston Group",
+            "areaname": "Lothian & Borders Area",
+            "domain": "livingstonramblers.org.uk",
+            "status": "Hosted"
+        }, {
+            "code": "BK50",
+            "groupname": "Berkshire Walkers (Group)",
+            "areaname": "Berkshire Area",
+            "domain": "",
+            "status": "Tobetransferred"
+        }, {
+            "code": "DN10",
+            "groupname": "Tavistock Group",
+            "areaname": "Devon Area",
+            "domain": "tavistockramblers.org.uk",
+            "status": "Tobetransferred"
+        }, {
+            "code": "WS02",
+            "groupname": "Kilmarnock & Loudoun Group",
+            "areaname": "South West Scotland Area",
+            "domain": "kilmarnockloudounramblers.org.uk",
+            "status": "HostedNotproduction"
+        }, {
+            "code": "CY50",
+            "groupname": "The South Lanarkshire Walkers",
+            "areaname": "Clydesdale to Solway Area",
+            "domain": "",
+            "status": "Unknown"
+        }, {
+            "code": "IL04",
+            "groupname": "North East London Group",
+            "areaname": "Inner London Area",
+            "domain": "northeastlondonramblers.org.uk",
+            "status": "HostedNotproduction"
+        }]
+}
