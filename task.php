@@ -15,17 +15,14 @@ define("GROUPFILEV2", "cache/allgroupsv2.json");
 define("APIRESPONSE", "cache/apiResponse.json");
 define("NOTIFYEMAILADDRESS", "feeds@ramblers-webs.org.uk");
 define("TASK", "https://groups.theramblers.org.uk/task.php");
-//define("GROUPSFEED", "https://uat-be.ramblers.nomensa.xyz/api/volunteers/groups?");
 define("GROUPSFEED", "https://walks-manager.ramblers.org.uk/api/volunteers/groups?");
-//define("APIKEY", "9a68085e6f159f6b2ecd0b7533805282");
 define("APIKEY", "853aa876db0a37ff0e6780db2d2addee");
-// define("RAMBLERSWEBSSITES", "https://ramblers-webs.org.uk/index.php?option=com_rw_accounts&task=domains.controller&format=json");
 define("RAMBLERSWEBSSITES", "https://ramblers-webs.org.uk/index.php?option=com_rw_accounts&view=domains&format=json");
 define("BR", "<br>");
 
 // 	First Release
-if (version_compare(PHP_VERSION, '8.0.0') < 0) {
-    echo 'You MUST be running on PHP version 8.0.0 or higher, running version: ' . \PHP_VERSION . BR;
+if (version_compare(PHP_VERSION, '8.3.0') < 0) {
+    echo 'You MUST be running on PHP version 8.3.0 or higher, running version: ' . \PHP_VERSION . BR;
     die();
 }
 // set current directory to current run directory
@@ -173,6 +170,23 @@ if ($errorFound) {
     Functions::errorEmail(GROUPSFEED, $msg3);
 }
 
+Logfile::writeWhen("Check external_url is not a ramblers.org.uk link");
+$first = true;
+foreach ($groups as $key => $group) {
+    $groupWebSite = $group->external_url;
+    if ($groupWebSite === null) {
+        $groupWebSite = '';
+    }
+    if (str_contains($groupWebSite, ".ramblers.org.uk") || str_contains($groupWebSite, "/ramblers.org.uk")) {
+        if ($first) {
+            Logfile::writeError("ERROR: Group web site URL/address points to ramblers.org.uk.");
+            echo "<h2>ERROR: Group web site URL/address points to ramblers.org.uk.</h2>";
+            $first = false;
+        }
+        Logfile::writeError("Group Code: " . $group->group_code . ", Group Name: " . $group->name . ", Group web page: " . $group->external_url);
+        echo "<ul><li>Group Code: " . $group->group_code . "</li><li> Group Name: " . $group->name . "</li><li>Group web page: " . $group->external_url . "</li></ul>";
+    }
+}
 Logfile::writeWhen("Cross referencing Central Office and Ramblers-webs data");
 
 foreach ($groups as $key => $group) {
@@ -181,10 +195,22 @@ foreach ($groups as $key => $group) {
     if ($site != null) {
         if ($site->status === "Hosted" or $site->status === "HostedDNSSet") {
             if (!Functions::contains($site->domain, $group->external_url)) {
-                Logfile::writeError("WARNING: Group web site URL/address does not match. Central Office and Ramblers-Webs.org.uk have different URLs for the group's website. Group Code: " . $group->group_code . ", Group Name: " . $group->name . ", Group web page: " . $group->url . ", Central Office URL for group website: " . $group->external_url . ", Ramblers-Webs URL for group website: https://" . $site->domain);
-                echo "WARNING: Group web site URL/address does not match. Central Office and Ramblers-Webs.org.uk have different URLs for the group's web site.<ul><li>Group Code: " . $group->group_code . "</li><li> Group Name: " . $group->name . "</li><li>Group web page: " . $group->url . "</li><li>Central Office URL for group website: " . $group->external_url . "</li><li>Ramblers-Webs URL for group website: https://" . $site->domain . "</li></ul>";
+                Logfile::writeError("WARNING: Central Office and Ramblers-Webs.org.uk have different URLs for the group's website. Group Code: " . $group->group_code . ", Group Name: " . $group->name . ", Group web page: " . $group->url . ", Central Office URL for group website: " . $group->external_url . ", Ramblers-Webs URL for group website: https://" . $site->domain);
+                echo "WARNING: Central Office and Ramblers-Webs.org.uk have different URLs for the group's web site.<ul><li>Group Code: " . $group->group_code . "</li><li> Group Name: " . $group->name . "</li><li>Ramblers page: " . $group->url . "</li><li>URL for Group Web site</li><ul><li>Central Office: " . $group->external_url . "</li><li>Ramblers-Webs: https://" . $site->domain . "</li></ul></ul>";
             }
         }
+    }
+}
+
+// remove invalid external_url
+
+foreach ($groups as $key => $group) {
+    $groupWebSite = $group->external_url;
+    if ($groupWebSite === null) {
+        $groupWebSite = '';
+    }
+    if (str_contains($groupWebSite, ".ramblers.org.uk") || str_contains($groupWebSite, "/ramblers.org.uk")) {
+        $group->external_url = '';
     }
 }
 
@@ -209,7 +235,7 @@ echo "Task completed" . BR;
 
 function writeV1objects($groups, $sites) {
     $newGroups = [];
-    foreach ($groups as $key => $group) {
+    foreach ($groups as $group) {
         //    if ($group->type !== "rww-group-hub") {
         $newGroup = new v1group();
         $newGroup->scope = $group->scope;
@@ -242,7 +268,6 @@ function writeV1objects($groups, $sites) {
 
 function writeV2objects($groups, $sites) {
     $newGroups = [];
-    $hosted = 0;
     foreach ($groups as $group) {
         //  if ($group->type !== "rww-group-hub") {
         $code = $group->group_code;
@@ -367,7 +392,6 @@ class v1group {
     public $areaname;
     public $website;
     public $status;
-
 }
 
 class v2group {
@@ -385,5 +409,4 @@ class v2group {
     public $areaName;
     public $dateUpdated;
     public $rwStatus;
-
 }

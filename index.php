@@ -18,10 +18,10 @@ define("V1", "1");
 define("V2", "2");
 
 // 	First Release
-if (version_compare(PHP_VERSION, '8.0.0') < 0) {
+if (version_compare(PHP_VERSION, '8.3.0') < 0) {
     header("Access-Control-Allow-Origin: *");
     header("Content-type: application/json");
-    echo json_encode(new Errorreturn("You MUST be running on PHP version 8.0.0 or higher, running version", 500), JSON_PRETTY_PRINT);
+    echo json_encode(new Errorreturn("You MUST be running on PHP version 8.3.0 or higher, running version", 500), JSON_PRETTY_PRINT);
     return;
 }
 // set current directory to current run directory
